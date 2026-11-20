@@ -90,3 +90,5 @@ services:
     network_mode: 'host'
     depends_on:
       - api
+    volumes:
+      - ./dashboard:/app
