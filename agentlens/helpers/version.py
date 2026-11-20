@@ -16,7 +16,7 @@ def get_agentlens_version():
 
 def check_agentlens_update():
     try:
-        response = requests.get("https://pypi.org/pypi/agentlens/json")
+        response = requests.get("https://pypi.org/pypi/agentlens/json", timeout=5)
 
         if response.status_code == 200:
             json_data = response.json()
