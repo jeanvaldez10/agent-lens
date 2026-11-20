@@ -681,7 +681,7 @@ function TracesColumns(
                           and identify your traces more easily.
                         </p>
                         <a
-                          href="https://github.com/jeansvaldez/agentlens/v2/concepts/traces#manual-trace-creation"
+                          href="https://github.com/jeanvaldez10/agent-lens/v2/concepts/traces#manual-trace-creation"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-block text-blue-300 underline hover:text-blue-200"
@@ -717,7 +717,7 @@ function TracesColumns(
                           properly tracking your LLM calls, tools, and agents.
                         </p>
                         <a
-                          href="https://github.com/jeansvaldez/agentlens/v2/usage/sdk-reference"
+                          href="https://github.com/jeanvaldez10/agent-lens/v2/usage/sdk-reference"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-block text-blue-300 underline hover:text-blue-200"

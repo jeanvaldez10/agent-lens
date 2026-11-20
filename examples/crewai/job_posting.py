@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 from textwrap import dedent
 
 # Next, we'll set our API keys. There are several ways to do this, the code below is just the most foolproof way for the purposes of this notebook. It accounts for both users who use environment variables and those who just want to set the API Key here in this notebook.
-# [Get an agentlens API key](https://github.com/jeansvaldez/agentlens/settings/projects)
+# [Get an agentlens API key](https://github.com/jeanvaldez10/agent-lens/settings/projects)
 # 1. Create an environment variable in a .env file or other method. By default, the agentlens `init()` function will look for an environment variable named `AGENTLENS_API_KEY`. Or...
 # 2. Replace `<your_agentlens_key>` below and pass in the optional `api_key` parameter to the agentlens `init(api_key=...)` function. Remember not to commit your API key to a public repo!
 load_dotenv()
@@ -136,7 +136,7 @@ tracer = agentlens.start_trace(trace_name="CrewAI Job Posting", tags=["crew-job-
 tasks = Tasks()
 agents = Agents()
 company_description = "We are a software company that builds AI-powered tools for businesses."
-company_domain = "https://www.github.com/jeansvaldez/agentlens"
+company_domain = "https://www.github.com/jeanvaldez10/agent-lens"
 hiring_needs = "We are looking for a software engineer with 3 years of experience in Python and Django."
 specific_benefits = "We offer a competitive salary, health insurance, and a 401k plan."
 

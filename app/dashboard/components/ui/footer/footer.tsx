@@ -25,7 +25,7 @@ export default function Footer() {
               <p className="font-bold transition duration-150 ease-in-out">Contact Us</p>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
-              <Link href="mailto:alex@github.com/jeansvaldez/agentlens" className="transition duration-150 ease-in-out">
+              <Link href="mailto:alex@github.com/jeanvaldez10/agent-lens" className="transition duration-150 ease-in-out">
                 Email
               </Link>
             </li>

@@ -20,7 +20,7 @@ Before starting, ensure you have the following installed on your system:
 
 ```bash
 # Clone the repository
-git clone https://github.com/jeansvaldez/agentlens.git
+git clone https://github.com/jeanvaldez10/agent-lens.git
 
 # Navigate to the app directory (this is your working directory for all subsequent steps)
 cd agentlens/app
@@ -321,11 +321,11 @@ Open your browser and navigate to `http://localhost:3000` - you should see the a
 
 1. Navigate to `http://localhost:3000/signin`
 2. **CRITICAL**: Use the correct seed data credentials:
-   - **Email**: `test@github.com/jeansvaldez/agentlens`
+   - **Email**: `test@github.com/jeanvaldez10/agent-lens`
    - **Password**: `password`
 3. You should be redirected to the dashboard after successful login
 
-**Note**: Do NOT use `demo@github.com/jeansvaldez/agentlens` - this user doesn't exist in the seed data and will cause authorization failures.
+**Note**: Do NOT use `demo@github.com/jeanvaldez10/agent-lens` - this user doesn't exist in the seed data and will cause authorization failures.
 
 ## Step 12: Test Trace Generation
 
@@ -388,7 +388,7 @@ python test_trace.py
 
 1. Run the test script above
 2. Note the session URL in the output (e.g., `http://localhost:3000/sessions?trace_id=...`)
-3. Navigate to that URL in your browser while logged in as `test@github.com/jeansvaldez/agentlens`
+3. Navigate to that URL in your browser while logged in as `test@github.com/jeanvaldez10/agent-lens`
 4. You should see the trace details including duration, costs, and timeline
 
 ## Step 14: Test with OpenAI Example (Optional)
@@ -463,7 +463,7 @@ If your test script says traces were sent successfully but they don't appear in 
    - Ensure both `JWT_SECRET_KEY` and `AUTH_COOKIE_SECRET` are set in `api/.env`
 
 2. **"Project not found" errors in dashboard**
-   - Ensure you're logged in as `test@github.com/jeansvaldez/agentlens` (not `demo@github.com/jeansvaldez/agentlens`)
+   - Ensure you're logged in as `test@github.com/jeanvaldez10/agent-lens` (not `demo@github.com/jeanvaldez10/agent-lens`)
    - Verify the API key `6b7a1469-bdcb-4d47-85ba-c4824bc8486e` is being used
 
 3. **JWT signature verification errors**
@@ -510,14 +510,14 @@ docker compose -f compose.yaml -f opentelemetry-collector/compose.yaml up -d
 
 1. **JWT Secret**: Must match between Supabase and API server
 2. **API Key**: Use `6b7a1469-bdcb-4d47-85ba-c4824bc8486e` from seed data
-3. **User Credentials**: Use `test@github.com/jeansvaldez/agentlens` / `password` from seed data
+3. **User Credentials**: Use `test@github.com/jeanvaldez10/agent-lens` / `password` from seed data
 4. **Playground Mode**: Must be disabled (`NEXT_PUBLIC_PLAYGROUND=false`)
 
 ## Success Criteria
 
 When everything is working correctly, you should be able to:
 
-1. ✅ **Authentication**: Log into dashboard at `http://localhost:3000/signin` with `test@github.com/jeansvaldez/agentlens` / `password`
+1. ✅ **Authentication**: Log into dashboard at `http://localhost:3000/signin` with `test@github.com/jeanvaldez10/agent-lens` / `password`
 2. ✅ **Trace Generation**: Run agentlens SDK scripts that generate traces and session URLs
 3. ✅ **Dashboard Access**: View traces in dashboard with full details (duration, costs, timeline)
 4. ✅ **Data Visualization**: See LLM calls, tool usage, and other telemetry data in waterfall view
@@ -533,7 +533,7 @@ Before considering the setup complete, verify each component:
 - [ ] **ClickHouse**: Database `otel_2` exists with required tables
 - [ ] **API Server**: Responds to health checks at `http://localhost:8000/health`
 - [ ] **Dashboard**: Loads at `http://localhost:3000` without errors
-- [ ] **Authentication**: Can log in with `test@github.com/jeansvaldez/agentlens` / `password`
+- [ ] **Authentication**: Can log in with `test@github.com/jeanvaldez10/agent-lens` / `password`
 - [ ] **Trace Generation**: Test script runs without errors and outputs session URL
 - [ ] **Trace Viewing**: Can navigate to trace URL and see detailed trace data
 - [ ] **No Authorization Errors**: No "Project not found" or JWT signature errors in logs

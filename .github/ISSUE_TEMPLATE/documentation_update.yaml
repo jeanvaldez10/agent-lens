@@ -29,7 +29,7 @@ body:
     attributes:
       label: 🔗 Affected Documentation Pages
       description: If applicable, provide links to the documentation pages that need updating.
-      placeholder: https://github.com/jeansvaldez/agentlens/page-to-update
+      placeholder: https://github.com/jeanvaldez10/agent-lens/page-to-update
     validations:
       required: false
   - type: textarea

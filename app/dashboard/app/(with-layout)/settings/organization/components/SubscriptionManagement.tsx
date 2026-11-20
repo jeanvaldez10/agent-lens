@@ -500,10 +500,10 @@ export function SubscriptionManagement({
               <p className="text-sm text-amber-700 dark:text-amber-200">
                 Contact{' '}
                 <a
-                  href="mailto:alex@github.com/jeansvaldez/agentlens"
+                  href="mailto:alex@github.com/jeanvaldez10/agent-lens"
                   className="font-medium underline hover:no-underline"
                 >
-                  alex@github.com/jeansvaldez/agentlens
+                  alex@github.com/jeanvaldez10/agent-lens
                 </a>{' '}
                 to manage this subscription.
               </p>

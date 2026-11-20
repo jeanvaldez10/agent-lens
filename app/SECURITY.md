@@ -15,7 +15,7 @@ We take security vulnerabilities seriously. If you discover a security vulnerabi
 ### How to Report
 
 1. **Do NOT create a public GitHub issue** for security vulnerabilities
-2. **Email us directly** at security@github.com/jeansvaldez/agentlens
+2. **Email us directly** at security@github.com/jeanvaldez10/agent-lens
 3. **Include the following information:**
    - Description of the vulnerability
    - Steps to reproduce the issue
@@ -63,7 +63,7 @@ agentlens includes several security features:
 
 ## Security Contacts
 
-- **Security Team**: security@github.com/jeansvaldez/agentlens
-- **General Contact**: support@github.com/jeansvaldez/agentlens
+- **Security Team**: security@github.com/jeanvaldez10/agent-lens
+- **General Contact**: support@github.com/jeanvaldez10/agent-lens
 
 Thank you for helping keep agentlens secure!

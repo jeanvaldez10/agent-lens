@@ -45,7 +45,7 @@ All your sessions can be viewed on the [agentlens dashboard](http://localhost:30
 ### First class Developer Experience
 Add powerful observability to your agents, tools, and functions with as little code as possible: one line at a time.
 
-Refer to our [documentation](https://github.com/jeansvaldez/agentlens)
+Refer to our [documentation](https://github.com/jeanvaldez10/agent-lens)
 
 ```python
 # Create a session span (root for all other spans)
@@ -129,7 +129,7 @@ Build multi-agent systems with tools, handoffs, and guardrails. agentlens native
 pip install openai-agents
 ```
 
-- [Python integration guide](https://github.com/jeansvaldez/agentlens/v2/integrations/openai_agents_python)
+- [Python integration guide](https://github.com/jeanvaldez10/agent-lens/v2/integrations/openai_agents_python)
 - [OpenAI Agents Python documentation](https://openai.github.io/openai-agents-python/)
 
 #### TypeScript
@@ -138,7 +138,7 @@ pip install openai-agents
 npm install agentlens @openai/agents
 ```
 
-- [TypeScript integration guide](https://github.com/jeansvaldez/agentlens/v2/integrations/openai_agents_js)
+- [TypeScript integration guide](https://github.com/jeanvaldez10/agent-lens/v2/integrations/openai_agents_js)
 - [OpenAI Agents JS documentation](https://openai.github.io/openai-agents-js)
 
 ### CrewAI 
@@ -149,7 +149,7 @@ Build Crew agents with observability in just 2 lines of code. Simply set an `AGE
 pip install 'crewai[agentlens]'
 ```
 
-- [agentlens integration example](https://github.com/jeansvaldez/agentlens/v1/integrations/crewai)
+- [agentlens integration example](https://github.com/jeanvaldez10/agent-lens/v1/integrations/crewai)
 - [Official CrewAI documentation](https://docs.crewai.com/how-to/agentlens-Observability)
 
 ### AG2 
@@ -163,7 +163,7 @@ With only two lines of code, add full observability and monitoring to AG2 (forme
 Track and analyze CAMEL agents with full observability. Set an `AGENTLENS_API_KEY` in your environment and initialize agentlens to get started.
 
 - [Camel AI](https://www.camel-ai.org/) - Advanced agent communication framework
-- [agentlens integration example](https://github.com/jeansvaldez/agentlens/v1/integrations/camel)
+- [agentlens integration example](https://github.com/jeanvaldez10/agent-lens/v1/integrations/camel)
 - [Official Camel AI documentation](https://docs.camel-ai.org/cookbooks/agents_tracking.html)
 
   Installation
@@ -213,7 +213,7 @@ print(response)
 agentlens.end_session("Success")
 ```
 
-Check out our [Camel integration guide](https://github.com/jeansvaldez/agentlens/v1/integrations/camel) for more examples including multi-agent scenarios.
+Check out our [Camel integration guide](https://github.com/jeanvaldez10/agent-lens/v1/integrations/camel) for more examples including multi-agent scenarios.
 
 ### Langchain 
 
@@ -248,13 +248,13 @@ agent = initialize_agent(tools,
                          handle_parsing_errors=True)
 ```
 
-Check out the [Langchain Examples Notebook](https://github.com/jeansvaldez/agentlens/blob/main/examples/langchain/langchain_examples.ipynb) for more details including Async handlers.
+Check out the [Langchain Examples Notebook](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/langchain/langchain_examples.ipynb) for more details including Async handlers.
 
 ### Cohere 
 
 First class support for Cohere(>=5.4.0). This is a living integration, should you need any added functionality please message us on Discord!
 
-- [agentlens integration example](https://github.com/jeansvaldez/agentlens/v1/integrations/cohere)
+- [agentlens integration example](https://github.com/jeanvaldez10/agent-lens/v1/integrations/cohere)
 - [Official Cohere documentation](https://docs.cohere.com/reference/about)
 
   Installation
@@ -304,7 +304,7 @@ agentlens.end_session('Success')
 
 Track agents built with the Anthropic Python SDK (>=0.32.0).
 
-- [agentlens integration guide](https://github.com/jeansvaldez/agentlens/v1/integrations/anthropic)
+- [agentlens integration guide](https://github.com/jeanvaldez10/agent-lens/v1/integrations/anthropic)
 - [Official Anthropic documentation](https://docs.anthropic.com/en/docs/welcome)
 
   Installation
@@ -406,7 +406,7 @@ await main()
 
 Track agents built with the Mistral Python SDK (>=0.32.0).
 
-- [agentlens integration example](https://github.com/jeansvaldez/agentlens/blob/main/examples/mistral/mistral_example.ipynb)
+- [agentlens integration example](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/mistral/mistral_example.ipynb)
 - [Official Mistral documentation](https://docs.mistral.ai)
 
   Installation
@@ -567,13 +567,13 @@ agentlens_api_key = os.getenv("AGENTLENS_API_KEY") or ""
 
 ```
 
-[You can find usage examples here!](https://github.com/jeansvaldez/agentlens/blob/main/examples/camelai_examples/README.md).
+[You can find usage examples here!](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/camelai_examples/README.md).
 
 ### LiteLLM 
 
 agentlens provides support for LiteLLM(>=1.3.1), allowing you to call 100+ LLMs using the same Input/Output Format. 
 
-- [agentlens integration example](https://github.com/jeansvaldez/agentlens/v1/integrations/litellm)
+- [agentlens integration example](https://github.com/jeanvaldez10/agent-lens/v1/integrations/litellm)
 - [Official LiteLLM documentation](https://docs.litellm.ai/docs/providers)
 
   Installation
@@ -624,8 +624,8 @@ Check out the [LlamaIndex docs](https://docs.llamaindex.ai/en/stable/module_guid
 
 agentlens provides support for Llama Stack Python Client(>=0.0.53), allowing you to monitor your Agentic applications. 
 
-- [agentlens integration example 1](https://github.com/jeansvaldez/agentlens/pull/530/files/65a5ab4fdcf310326f191d4b870d4f553591e3ea#diff-fdddf65549f3714f8f007ce7dfd1cde720329fe54155d54389dd50fbd81813cb)
-- [agentlens integration example 2](https://github.com/jeansvaldez/agentlens/pull/530/files/65a5ab4fdcf310326f191d4b870d4f553591e3ea#diff-6688ff4fb7ab1ce7b1cc9b8362ca27264a3060c16737fb1d850305787a6e3699)
+- [agentlens integration example 1](https://github.com/jeanvaldez10/agent-lens/pull/530/files/65a5ab4fdcf310326f191d4b870d4f553591e3ea#diff-fdddf65549f3714f8f007ce7dfd1cde720329fe54155d54389dd50fbd81813cb)
+- [agentlens integration example 2](https://github.com/jeanvaldez10/agent-lens/pull/530/files/65a5ab4fdcf310326f191d4b870d4f553591e3ea#diff-6688ff4fb7ab1ce7b1cc9b8362ca27264a3060c16737fb1d850305787a6e3699)
 - [Official Llama Stack Python Client](https://github.com/meta-llama/llama-stack-client-python)
 
 ### SwarmZero AI 
@@ -633,7 +633,7 @@ agentlens provides support for Llama Stack Python Client(>=0.0.53), allowing you
 Track and analyze SwarmZero agents with full observability. Set an `AGENTLENS_API_KEY` in your environment and initialize agentlens to get started.
 
 - [SwarmZero](https://swarmzero.ai) - Advanced multi-agent framework
-- [agentlens integration example](https://github.com/jeansvaldez/agentlens/v1/integrations/swarmzero)
+- [agentlens integration example](https://github.com/jeanvaldez10/agent-lens/v1/integrations/swarmzero)
 - [SwarmZero AI integration example](https://docs.swarmzero.ai/examples/ai-agents/build-and-monitor-a-web-search-agent)
 - [SwarmZero AI - agentlens documentation](https://docs.swarmzero.ai/sdk/observability/agentlens)
 - [Official SwarmZero Python SDK](https://github.com/swarmzero/swarmzero)
@@ -702,18 +702,18 @@ There are tons of ways to contribute, and we genuinely appreciate all of them:
 Even if you're not ready to contribute code, we'd love to hear your thoughts. Drop into our Discord, open an issue, or start a discussion. We're building this for developers like you, so your input matters.
 
 ## Table of Contents
-- [Getting Started](https://github.com/jeansvaldez/agentlens/blob/main/README.md#getting-started)
-- [Development Environment](https://github.com/jeansvaldez/agentlens/blob/main/README.md#development-environment)
-- [Testing](https://github.com/jeansvaldez/agentlens/blob/main/README.md#testing)
-- [Adding LLM Providers](https://github.com/jeansvaldez/agentlens/blob/main/README.md#adding-llm-providers)
-- [Code Style](https://github.com/jeansvaldez/agentlens/blob/main/README.md#code-style)
-- [Pull Request Process](https://github.com/jeansvaldez/agentlens/blob/main/README.md#pull-request-process)
-- [Documentation](https://github.com/jeansvaldez/agentlens/blob/main/README.md#documentation)
+- [Getting Started](https://github.com/jeanvaldez10/agent-lens/blob/main/README.md#getting-started)
+- [Development Environment](https://github.com/jeanvaldez10/agent-lens/blob/main/README.md#development-environment)
+- [Testing](https://github.com/jeanvaldez10/agent-lens/blob/main/README.md#testing)
+- [Adding LLM Providers](https://github.com/jeanvaldez10/agent-lens/blob/main/README.md#adding-llm-providers)
+- [Code Style](https://github.com/jeanvaldez10/agent-lens/blob/main/README.md#code-style)
+- [Pull Request Process](https://github.com/jeanvaldez10/agent-lens/blob/main/README.md#pull-request-process)
+- [Documentation](https://github.com/jeanvaldez10/agent-lens/blob/main/README.md#documentation)
 
 ## Getting Started
 
 1. **Fork and Clone**:
-   First, fork the repository by clicking the 'Fork' button in the top right of the [agentlens repository](https://github.com/jeansvaldez/agentlens). This creates your own copy of the repository where you can make changes.
+   First, fork the repository by clicking the 'Fork' button in the top right of the [agentlens repository](https://github.com/jeanvaldez10/agent-lens). This creates your own copy of the repository where you can make changes.
 
    Then clone your fork:
    ```bash
@@ -723,7 +723,7 @@ Even if you're not ready to contribute code, we'd love to hear your thoughts. Dr
 
    Add the upstream repository to stay in sync:
    ```bash
-   git remote add upstream https://github.com/jeansvaldez/agentlens.git
+   git remote add upstream https://github.com/jeanvaldez10/agent-lens.git
    git fetch upstream
    ```
 
@@ -1050,11 +1050,11 @@ We encourage active community participation and are here to help!
 ### Preferred Communication Channels
 
 1. **GitHub Issues & Discussions**:
-   - Open an [issue](https://github.com/jeansvaldez/agentlens/issues) for:
+   - Open an [issue](https://github.com/jeanvaldez10/agent-lens/issues) for:
      - Bug reports
      - Feature requests
      - Documentation improvements
-   - Start a [discussion](https://github.com/jeansvaldez/agentlens/discussions) for:
+   - Start a [discussion](https://github.com/jeanvaldez10/agent-lens/discussions) for:
      - Questions about usage
      - Ideas for new features
      - Community showcase
@@ -1068,7 +1068,7 @@ We encourage active community participation and are here to help!
      - Sharing your projects
 
 3. **Contact Form**:
-   - For private inquiries, use our [contact form](https://github.com/jeansvaldez/agentlens/contact)
+   - For private inquiries, use our [contact form](https://github.com/jeanvaldez10/agent-lens/contact)
    - Please note that public channels are preferred for technical discussions
 
 ## License
@@ -1891,7 +1891,7 @@ Observability and monitoring for your AI agents and LLM apps. And we do it all i
 
 ... that logs everything back to your agentlens Dashboard.
 
-agentlens is also available for TypeScript/JavaScript applications. Check out our [TypeScript SDK guide](https://github.com/jeansvaldez/agentlens/blob/main/v2/usage/typescript-sdk) for Node.js projects.
+agentlens is also available for TypeScript/JavaScript applications. Check out our [TypeScript SDK guide](https://github.com/jeanvaldez10/agent-lens/blob/main/v2/usage/typescript-sdk) for Node.js projects.
 
 That's it! agentlens will automatically instrument your code and start tracking traces.
 
@@ -1919,7 +1919,7 @@ You can also set a custom trace name during initialization:
 
 ## The agentlens Dashboard
 
-[Give us a star](https://github.com/jeansvaldez/agentlens) to bookmark on GitHub, save for later )
+[Give us a star](https://github.com/jeanvaldez10/agent-lens) to bookmark on GitHub, save for later )
 
 With just two lines of code, you can free yourself from the chains of the terminal and, instead, visualize your agents' behavior
 in your agentlens Dashboard. After setting up agentlens, each execution of your program is recorded as a session and the above
@@ -1951,7 +1951,7 @@ description: "Get started with agentlens in minutes with just 2 lines of code fo
 
 agentlens is designed for easy integration into your AI agent projects, providing powerful observability with minimal setup. This guide will get you started quickly.
 
-[Give us a star on GitHub!](https://github.com/jeansvaldez/agentlens) Your support helps us grow. 
+[Give us a star on GitHub!](https://github.com/jeanvaldez10/agent-lens) Your support helps us grow. 
 
 Prefer asking your IDE? Install the Mintlify MCP Docs Server for agentlens to chat with the docs while you code:
 `npx mint-mcp add agentlens`
@@ -2215,7 +2215,7 @@ After calling `agentlens.init()`, the SDK automatically identifies installed LLM
 
 ## Declarative Tracing with Decorators
 
-The [decorators](https://github.com/jeansvaldez/agentlens/blob/main/v2/concepts/decorators) system allows you to add tracing to your existing functions and classes with minimal code changes. Decorators create hierarchical spans that provide a structured view of your agent's operations for monitoring and analysis.
+The [decorators](https://github.com/jeanvaldez10/agent-lens/blob/main/v2/concepts/decorators) system allows you to add tracing to your existing functions and classes with minimal code changes. Decorators create hierarchical spans that provide a structured view of your agent's operations for monitoring and analysis.
 
 ## OpenTelemetry Foundation
 
@@ -2223,7 +2223,7 @@ agentlens is built on [OpenTelemetry](https://opentelemetry.io/), a widely-adopt
 
 # Sessions
 
-A [Session](https://github.com/jeansvaldez/agentlens/blob/main/v2/concepts/sessions) represents a single user interaction with your agent. When you initialize agentlens using the `init` function, a session is automatically created for you:
+A [Session](https://github.com/jeanvaldez10/agent-lens/blob/main/v2/concepts/sessions) represents a single user interaction with your agent. When you initialize agentlens using the `init` function, a session is automatically created for you:
 
 ```python
 import agentlens
@@ -2311,7 +2311,7 @@ response = client.chat.completions.create(
 
 # Tags
 
-[Tags](https://github.com/jeansvaldez/agentlens/blob/main/v2/concepts/tags) help you organize and filter your sessions. You can add tags when initializing agentlens or when starting a session:
+[Tags](https://github.com/jeanvaldez10/agent-lens/blob/main/v2/concepts/tags) help you organize and filter your sessions. You can add tags when initializing agentlens or when starting a session:
 
 ```python
 # Add tags when initializing
@@ -2323,7 +2323,7 @@ agentlens.start_session(tags=["customer-service", "tier-1"])
 
 # Host Environment
 
-agentlens automatically collects basic [information](https://github.com/jeansvaldez/agentlens/blob/main/v2/concepts/host-env) about the environment where your agent is running:
+agentlens automatically collects basic [information](https://github.com/jeanvaldez10/agent-lens/blob/main/v2/concepts/host-env) about the environment where your agent is running:
 
 - **Operating System**: The OS type and version
 - **Python Version**: The version of Python being used
@@ -2406,7 +2406,7 @@ import EnvTooltip from '/snippets/add-env-tooltip.mdx'
     After your run, agentlens prints a clickable URL to console linking directly to your session in the Dashboard 
      {/* Intentionally blank div for newline */}
 
-[Give us a star](https://github.com/jeansvaldez/agentlens) if you liked agentlens! (you may be our 3,000th )
+[Give us a star](https://github.com/jeanvaldez10/agent-lens) if you liked agentlens! (you may be our 3,000th )
 
 ## More basic functionality
 
@@ -3696,7 +3696,7 @@ from dotenv import load_dotenv
 from textwrap import dedent
 
 # Next, we'll set our API keys. There are several ways to do this, the code below is just the most foolproof way for the purposes of this notebook. It accounts for both users who use environment variables and those who just want to set the API Key here in this notebook.
-# [Get an agentlens API key](https://github.com/jeansvaldez/agentlens/settings/projects)
+# [Get an agentlens API key](https://github.com/jeanvaldez10/agent-lens/settings/projects)
 # 1. Create an environment variable in a .env file or other method. By default, the agentlens `init()` function will look for an environment variable named `AGENTLENS_API_KEY`. Or...
 # 2. Replace `<your_agentlens_key>` below and pass in the optional `api_key` parameter to the agentlens `init(api_key=...)` function. Remember not to commit your API key to a public repo!
 load_dotenv()
@@ -3821,7 +3821,7 @@ tracer = agentlens.start_trace(trace_name="CrewAI Job Posting", tags=["crew-job-
 tasks = Tasks()
 agents = Agents()
 company_description = "We are a software company that builds AI-powered tools for businesses."
-company_domain = "https://www.github.com/jeansvaldez/agentlens"
+company_domain = "https://www.github.com/jeanvaldez10/agent-lens"
 hiring_needs = "We are looking for a software engineer with 3 years of experience in Python and Django."
 specific_benefits = "We offer a competitive salary, health insurance, and a 401k plan."
 
@@ -3898,7 +3898,7 @@ from agentlens.integration.callbacks.langchain import (
 
 # Next, we'll set our API keys. There are several ways to do this, the code below is just the most foolproof way for the purposes of this notebook. It accounts for both users who use environment variables and those who just want to set the API Key here in this notebook.
 #
-# [Get an agentlens API key](https://github.com/jeansvaldez/agentlens/settings/projects)
+# [Get an agentlens API key](https://github.com/jeanvaldez10/agent-lens/settings/projects)
 #
 # 1. Create an environment variable in a .env file or other method. By default, the agentlens `init()` function will look for an environment variable named `AGENTLENS_API_KEY`. Or...
 #
@@ -3979,73 +3979,73 @@ This directory contains comprehensive examples demonstrating how to integrate ag
 
 ##  Directory Structure
 
-- **[`ag2/`](https://github.com/jeansvaldez/agentlens/blob/main/ag2)** - Examples for AG2 (AutoGen 2.0) multi-agent conversations
+- **[`ag2/`](https://github.com/jeanvaldez10/agent-lens/blob/main/ag2)** - Examples for AG2 (AutoGen 2.0) multi-agent conversations
   - `agentchat_with_memory` - Agent chat with persistent memory
   - `async_human_input` - Asynchronous human input handling
   - `tools_wikipedia_search` - Wikipedia search tool integration
 
-- **[`anthropic/`](https://github.com/jeansvaldez/agentlens/blob/main/anthropic)** - Anthropic Claude API integration examples
+- **[`anthropic/`](https://github.com/jeanvaldez10/agent-lens/blob/main/anthropic)** - Anthropic Claude API integration examples
   - `agentlens-anthropic-understanding-tools` - Deep dive into tool usage
   - `anthropic-example-async` - Asynchronous API calls
   - `anthropic-example-sync` - Synchronous API calls
   - `antrophic-example-tool` - Tool calling examples
   - `README.md` - Detailed Anthropic integration guide
 
-- **[`autogen/`](https://github.com/jeansvaldez/agentlens/blob/main/autogen)** - Microsoft AutoGen framework examples
+- **[`autogen/`](https://github.com/jeanvaldez10/agent-lens/blob/main/autogen)** - Microsoft AutoGen framework examples
   - `AgentChat` - Basic agent chat functionality
   - `MathAgent` - Mathematical problem-solving agent
 
-- **[`crewai/`](https://github.com/jeansvaldez/agentlens/blob/main/crewai)** - CrewAI multi-agent framework examples
+- **[`crewai/`](https://github.com/jeanvaldez10/agent-lens/blob/main/crewai)** - CrewAI multi-agent framework examples
   - `job_posting` - Job posting automation workflow
   - `markdown_validator` - Markdown validation agent
 
-- **[`gemini/`](https://github.com/jeansvaldez/agentlens/blob/main/gemini)** - Google Gemini API integration
+- **[`gemini/`](https://github.com/jeanvaldez10/agent-lens/blob/main/gemini)** - Google Gemini API integration
   - `gemini_example` - Basic Gemini API usage with agentlens
 
-- **[`google_adk/`](https://github.com/jeansvaldez/agentlens/blob/main/google_adk)** - Google AI Development Kit examples
+- **[`google_adk/`](https://github.com/jeanvaldez10/agent-lens/blob/main/google_adk)** - Google AI Development Kit examples
   - `human_approval` - Human-in-the-loop approval workflows
 
-- **[`langchain/`](https://github.com/jeansvaldez/agentlens/blob/main/langchain)** - LangChain framework integration
+- **[`langchain/`](https://github.com/jeanvaldez10/agent-lens/blob/main/langchain)** - LangChain framework integration
   - `langchain_examples` - Comprehensive LangChain usage examples
 
-- **[`litellm/`](https://github.com/jeansvaldez/agentlens/blob/main/litellm)** - LiteLLM proxy integration
+- **[`litellm/`](https://github.com/jeanvaldez10/agent-lens/blob/main/litellm)** - LiteLLM proxy integration
   - `litellm_example` - Multi-provider LLM access through LiteLLM
 
-- **[`openai/`](https://github.com/jeansvaldez/agentlens/blob/main/openai)** - OpenAI API integration examples
+- **[`openai/`](https://github.com/jeanvaldez10/agent-lens/blob/main/openai)** - OpenAI API integration examples
   - `multi_tool_orchestration` - Complex tool orchestration
   - `openai_example_async` - Asynchronous OpenAI API calls
   - `openai_example_sync` - Synchronous OpenAI API calls
   - `web_search` - Web search functionality
 
-- **[`openai_agents/`](https://github.com/jeansvaldez/agentlens/blob/main/openai_agents)** - OpenAI Agents SDK examples
+- **[`openai_agents/`](https://github.com/jeanvaldez10/agent-lens/blob/main/openai_agents)** - OpenAI Agents SDK examples
   - `agent_patterns` - Common agent design patterns
   - `agents_tools` - Agent tool integration
   - `customer_service_agent` - Customer service automation
 
-- **[`smolagents/`](https://github.com/jeansvaldez/agentlens/blob/main/smolagents)** - SmolAgents framework examples
+- **[`smolagents/`](https://github.com/jeanvaldez10/agent-lens/blob/main/smolagents)** - SmolAgents framework examples
   - `multi_smolagents_system` - Multi-agent system coordination
   - `text_to_sql` - Natural language to SQL conversion
 
-- **[`watsonx/`](https://github.com/jeansvaldez/agentlens/blob/main/watsonx)** - IBM Watsonx AI integration
+- **[`watsonx/`](https://github.com/jeanvaldez10/agent-lens/blob/main/watsonx)** - IBM Watsonx AI integration
   - `watsonx-streaming` - Streaming text generation
   - `watsonx-text-chat` - Text generation and chat completion
   - `watsonx-tokeniation-model` - Tokenization and model details
   - `README.md` - Detailed Watsonx integration guide
 
-- **[`xai/`](https://github.com/jeansvaldez/agentlens/blob/main/xai)** - xAI (Grok) API integration
+- **[`xai/`](https://github.com/jeanvaldez10/agent-lens/blob/main/xai)** - xAI (Grok) API integration
   - `grok_examples` - Basic Grok API usage
   - `grok_vision_examples` - Vision capabilities with Grok
 
 ### Utility Scripts
 
-- **[`generate_documentation.py`](https://github.com/jeansvaldez/agentlens/blob/main/generate_documentation.py)** - Script to convert Jupyter notebooks to MDX documentation files
+- **[`generate_documentation.py`](https://github.com/jeanvaldez10/agent-lens/blob/main/generate_documentation.py)** - Script to convert Jupyter notebooks to MDX documentation files
   - Converts notebooks from `examples/` to `docs/v2/examples/`
   - Handles frontmatter, GitHub links, and installation sections
   - Transforms `%pip install` commands to CodeGroup format
 
 ##  Prerequisites
 
-1. **agentlens Account**: Sign up at [github.com/jeansvaldez/agentlens](https://github.com/jeansvaldez/agentlens)
+1. **agentlens Account**: Sign up at [github.com/jeanvaldez10/agent-lens](https://github.com/jeanvaldez10/agent-lens)
 2. **Python Environment**: Python 3.10+ recommended
 3. **API Keys**: Obtain API keys for the services you want to use
 
@@ -4080,9 +4080,9 @@ When adding new examples:
 
 ##  Additional Resources
 
-- [agentlens Documentation](https://github.com/jeansvaldez/agentlens)
+- [agentlens Documentation](https://github.com/jeanvaldez10/agent-lens)
 - [agentlens Dashboard](http://localhost:3000)
-- [GitHub Repository](https://github.com/jeansvaldez/agentlens)
+- [GitHub Repository](https://github.com/jeanvaldez10/agent-lens)
 - [Community Discord](https://discord.gg/agentlens)
 
 ##  License

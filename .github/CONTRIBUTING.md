@@ -19,6 +19,6 @@ If you have feature requests or bug reports, please open an issue.
 The easiest way to contribute is to start a conversation with us. We highly recommend:
 
 1. Joining our Discord community
-2. Sending us a message through our contact form at [github.com/jeansvaldez/agentlens/contact](https://github.com/jeansvaldez/agentlens/contact)
+2. Sending us a message through our contact form at [github.com/jeanvaldez10/agent-lens/contact](https://github.com/jeanvaldez10/agent-lens/contact)
 
 We look forward to collaborating with you and appreciate your interest in improving agentlens!

@@ -187,7 +187,7 @@ export default function StartingFresh({
                                 <Button
                                     size="lg"
                                     variant="outline"
-                                    onClick={() => window.open('https://github.com/jeansvaldez/agentlens/tree/main/examples', '_blank')}
+                                    onClick={() => window.open('https://github.com/jeanvaldez10/agent-lens/tree/main/examples', '_blank')}
                                     className="flex items-center gap-2"
                                 >
                                     Access examples

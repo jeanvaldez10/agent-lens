@@ -8,7 +8,7 @@ Any updates made to the images in this directory (such as replacing an image fil
 
 To create a URL that consistenly updates, use the pattern:
 ```
-https://raw.githubusercontent.com/jeansvaldez/agentlens/main/docs/images/external/<filename>.<extension>
+https://raw.githubusercontent.com/jeanvaldez10/agent-lens/main/docs/images/external/<filename>.<extension>
 ```
 
 ## Usage Guidelines

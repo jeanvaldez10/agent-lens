@@ -1,5 +1,5 @@
 # HTTP only cookie- allowed to be accessed during requests only; not accessible to javascript
-# set to github.com/jeansvaldez/agentlens domain to share across subdomains
+# set to github.com/jeanvaldez10/agent-lens domain to share across subdomains
 # store session ID in cookie, reference central session store (redis?)
 # extend session expiration +30 mins when it is used to extend login
 # require MFA when editing sensitive information

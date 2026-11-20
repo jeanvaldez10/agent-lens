@@ -52,5 +52,5 @@ python simple_task_agent.py
 ## Learn More
 
 - [Smolagents Documentation](https://github.com/huggingface/smolagents)
-- [agentlens Documentation](https://github.com/jeansvaldez/agentlens)
-- [Full Integration Guide](https://github.com/jeansvaldez/agentlens/v2/integrations/smolagents)
+- [agentlens Documentation](https://github.com/jeanvaldez10/agent-lens)
+- [Full Integration Guide](https://github.com/jeanvaldez10/agent-lens/v2/integrations/smolagents)

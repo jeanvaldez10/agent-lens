@@ -8,11 +8,11 @@ const getApiKey = (projectApiKey?: string) => projectApiKey || 'your_api_key_her
 export const getColabButtonHtml = (exampleType: ExampleType): string => {
     const colabUrls = {
         'function-tool':
-            'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai_agents/agent_patterns.ipynb',
+            'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai_agents/agent_patterns.ipynb',
         'web-search':
-            'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai_agents/agents_tools.ipynb',
+            'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai_agents/agents_tools.ipynb',
         'multi-agent':
-            'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai_agents/customer_service_agent.ipynb'
+            'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai_agents/customer_service_agent.ipynb'
     };
 
     return `<a target="_blank" href="${colabUrls[exampleType]}">

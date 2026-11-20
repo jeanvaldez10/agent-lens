@@ -44,7 +44,7 @@ const staticHelpLinks: Omit<ILink, 'icon' | 'variant'>[] = [
   {
     title: 'Docs',
     href: '#',
-    onclick: () => window.open('https://github.com/jeansvaldez/agentlens', '_blank'),
+    onclick: () => window.open('https://github.com/jeanvaldez10/agent-lens', '_blank'),
   },
   {
     title: 'Chat with Docs',

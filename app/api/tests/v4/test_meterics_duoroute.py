@@ -9,7 +9,7 @@ import pytest
 """
 
 
-# FIXME: Remove test skip after https://github.com/jeansvaldez/agentlens/issues/820
+# FIXME: Remove test skip after https://github.com/jeanvaldez10/agent-lens/issues/820
 pytestmark = [pytest.mark.skip]
 
 

@@ -28,7 +28,7 @@ export const InstrumentationWarning = ({ className }: InstrumentationWarningProp
                 asChild
               >
                 <a
-                  href="https://github.com/jeansvaldez/agentlens/v2/usage/sdk-reference"
+                  href="https://github.com/jeanvaldez10/agent-lens/v2/usage/sdk-reference"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1"

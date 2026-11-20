@@ -81,8 +81,8 @@ export function useBillingTooltipContent(dateRange?: DateRange, projectId?: stri
       <div className="mt-2 border-t pt-2 text-xs text-gray-500 dark:text-gray-400">
         This is your actual agentlens billing cost. View your complete bill in organization settings.
         Questions? Contact{' '}
-        <a href="mailto:support@github.com/jeansvaldez/agentlens" className="underline hover:no-underline">
-          support@github.com/jeansvaldez/agentlens
+        <a href="mailto:support@github.com/jeanvaldez10/agent-lens" className="underline hover:no-underline">
+          support@github.com/jeanvaldez10/agent-lens
         </a>
         .
       </div>

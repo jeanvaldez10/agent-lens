@@ -17,7 +17,7 @@ export default function Footer() {
                   <p className="font-semibold text-black">General</p>
                   <p className="mt-1.5 text-zinc-900 text-opacity-80">
                     {' '}
-                    <Link href="https://github.com/jeansvaldez/agentlens">Documentation</Link> <br />{' '}
+                    <Link href="https://github.com/jeanvaldez10/agent-lens">Documentation</Link> <br />{' '}
                     <Link href="/contact-us">Enterprise</Link> <br />{' '}
                     <Link href="https://agents.staf.ai/Staf">View all Agents</Link>{' '}
                   </p>
@@ -43,7 +43,7 @@ export default function Footer() {
             <Link href="https://discord.gg/FagdcwwXRR">
               <img src="/discord.svg" className="aspect-square w-5 shrink-0" alt="Discord" />
             </Link>
-            <Link href="https://github.com/jeansvaldez/agentlens">
+            <Link href="https://github.com/jeanvaldez10/agent-lens">
               <img src="/github.svg" className="aspect-square w-5 shrink-0" alt="Github" />
             </Link>
             <Link href="https://twitter.com/agentlensAI">
@@ -55,7 +55,7 @@ export default function Footer() {
             <Link href="https://calendly.com/itsada">
               <img src="/calendar-03.svg" className="aspect-square w-5 shrink-0" alt="Calendar" />
             </Link>
-            <Link href="mailto:adam@github.com/jeansvaldez/agentlens">
+            <Link href="mailto:adam@github.com/jeanvaldez10/agent-lens">
               <img src="mail-02.svg" className="aspect-square w-5 shrink-0" alt="Email" />
             </Link>
           </div>

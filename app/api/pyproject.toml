@@ -57,7 +57,7 @@ dev = [
   "pytest-recording", # Alternative to pytest-vcr with better Python 3.x support
   # TODO: Use release version after vcrpy is released with this fix.
   "vcrpy @ git+https://github.com/kevin1024/vcrpy.git@5f1b20c4ca4a18c1fc8cfe049d7df12ca0659c9b",
-  # "agentlens @ git+https://github.com/jeansvaldez/agentlens.git@bd621f1ae76f0881aa05d780d70054d8a5caee07",
+  # "agentlens @ git+https://github.com/jeanvaldez10/agent-lens.git@bd621f1ae76f0881aa05d780d70054d8a5caee07",
   # Code quality and type checking
   "python-dotenv", # Environment management for secure testing
   # Agent integration testing
