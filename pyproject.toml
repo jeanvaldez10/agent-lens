@@ -9,7 +9,7 @@ authors = [
     { name = "jeansvaldez" },
 ]
 description = "Observability and DevTool Platform for AI Agents"
-# readme = "README.md"
+readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -84,8 +84,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/jeansvaldez/agentlens"
-Issues = "https://github.com/jeansvaldez/agentlens/issues"
+Homepage = "https://github.com/jeanvaldez10/agent-lens"
+Issues = "https://github.com/jeanvaldez10/agent-lens/issues"
 
 [tool.uv]
 compile-bytecode = true # Enable bytecode compilation for better performance
