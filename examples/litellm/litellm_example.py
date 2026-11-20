@@ -3,7 +3,7 @@
 # We can use agentlens to observe LiteLLM, a lightweight library for working with large language models. This integration allows you to monitor and log the performance of your LiteLLM applications, providing insights into their behavior and efficiency.
 # LiteLLM integration extends observability to the different agent libraries which rely on LiteLLM and hence make it possible to observe the agents built using these libraries.
 #
-# [See our LiteLLM docs](https://github.com/jeansvaldez/agentlens/v1/integrations/litellm)
+# [See our LiteLLM docs](https://github.com/jeanvaldez10/agent-lens/v1/integrations/litellm)
 # First let's install the required packages
 # %pip install -U litellm
 # %pip install -U agentlens
@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 
 # Next, we'll set our API keys. There are several ways to do this, the code below is just the most foolproof way for the purposes of this notebook. It accounts for both users who use environment variables and those who just want to set the API Key here in this notebook.
 #
-# [Get an agentlens API key](https://github.com/jeansvaldez/agentlens/settings/projects)
+# [Get an agentlens API key](https://github.com/jeanvaldez10/agent-lens/settings/projects)
 #
 # 1. Create an environment variable in a .env file or other method. By default, the agentlens `init()` function will look for an environment variable named `AGENTLENS_API_KEY`. Or...
 #

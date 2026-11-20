@@ -70,7 +70,7 @@ This directory contains comprehensive examples demonstrating how to integrate ag
 
 ## 📓 Prerequisites
 
-1. **agentlens Account**: Sign up at [github.com/jeansvaldez/agentlens](https://github.com/jeansvaldez/agentlens)
+1. **agentlens Account**: Sign up at [github.com/jeanvaldez10/agent-lens](https://github.com/jeanvaldez10/agent-lens)
 2. **Python Environment**: Python 3.10+ recommended
 3. **API Keys**: Obtain API keys for the services you want to use
 
@@ -105,9 +105,9 @@ When adding new examples:
 
 ## 📚 Additional Resources
 
-- [agentlens Documentation](https://github.com/jeansvaldez/agentlens)
+- [agentlens Documentation](https://github.com/jeanvaldez10/agent-lens)
 - [agentlens Dashboard](http://localhost:3000)
-- [GitHub Repository](https://github.com/jeansvaldez/agentlens)
+- [GitHub Repository](https://github.com/jeanvaldez10/agent-lens)
 - [Community Discord](https://discord.gg/agentlens)
 
 ## 📄 License

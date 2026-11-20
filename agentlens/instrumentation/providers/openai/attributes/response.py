@@ -436,7 +436,9 @@ def get_response_output_attributes(output: List["ResponseOutputTypes"]) -> Attri
             )
 
         else:
-            logger.debug(f"[agentlens.instrumentation.openai.response] '{output_item}' is not a recognized output type.")
+            logger.debug(
+                f"[agentlens.instrumentation.openai.response] '{output_item}' is not a recognized output type."
+            )
 
     return attributes
 

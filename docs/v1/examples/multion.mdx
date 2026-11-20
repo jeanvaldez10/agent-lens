@@ -4,13 +4,13 @@ description: 'Tracking Multion usage with agentlens'
 mode: "wide"
 ---
 
-_View All Notebooks on <a href={'https://github.com/jeansvaldez/agentlens/blob/main/examples/multion_examples/'} target={'_blank'}>Github</a>_
+_View All Notebooks on <a href={'https://github.com/jeanvaldez10/agent-lens/blob/main/examples/multion_examples/'} target={'_blank'}>Github</a>_
 
 
 {/*  SOURCE_FILE: examples/multion_examples/Autonomous_web_browsing.ipynb  */}
 
 # MultiOn Tracking Web Browse Actions
-<img src="https://github.com/jeansvaldez/agentlens/blob/main/docs/logo/multion_integration.png?raw=true" width="250px" style="max-width: 100%; height: auto;"/>
+<img src="https://github.com/jeanvaldez10/agent-lens/blob/main/docs/logo/multion_integration.png?raw=true" width="250px" style="max-width: 100%; height: auto;"/>
     
 Agents using MultiOn can launch and control remote or local web browsers to perform actions and retrieve context using natural language commands. With agentlens, MultiOn evens such as browse, retrieve, and step are automatically tracked.
 
@@ -42,7 +42,7 @@ from dotenv import load_dotenv
 
 Next, we'll set our API keys. There are several ways to do this, the code below is just the most foolproof way for the purposes of this notebook. It accounts for both users who use environment variables and those who just want to set the API Key here in this notebook.
 
-[Get an agentlens API key](https://github.com/jeansvaldez/agentlens/settings/projects)
+[Get an agentlens API key](https://github.com/jeanvaldez10/agent-lens/settings/projects)
 
 1. Create an environment variable in a .env file or other method. By default, the agentlens `init()` function will look for an environment variable named `AGENTLENS_API_KEY`. Or...
 
@@ -73,7 +73,7 @@ request_options = RequestOptions(
 
 browse_response = multion.browse(
     cmd="what three things do i get with agentlens",
-    url="https://www.github.com/jeansvaldez/agentlens/",
+    url="https://www.github.com/jeanvaldez10/agent-lens/",
     max_steps=4,
     include_screenshot=True,
     request_options=request_options,
@@ -110,7 +110,7 @@ request_options = RequestOptions(
 
 browse_response = multion.browse(
     cmd="what three things do i get with agentlens",
-    url="https://www.github.com/jeansvaldez/agentlens/",
+    url="https://www.github.com/jeanvaldez10/agent-lens/",
     max_steps=4,
     include_screenshot=True,
     request_options=request_options,

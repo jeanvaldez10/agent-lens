@@ -297,7 +297,7 @@ If you prefer containers or need a consistent env:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/jeansvaldez/agentlens.git
+git clone https://github.com/jeanvaldez10/agent-lens.git
 ```
 
 ### 2. Set Up Environment Variables
@@ -612,9 +612,9 @@ For more information, visit [elastic.co/licensing/elastic-license](https://www.e
 ## 🆘 Support
 
 - **Documentation**: Check our [docs](docs/)
-- **Issues**: [GitHub Issues](https://github.com/jeansvaldez/agentlens/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/jeansvaldez/agentlens/discussions)
-- **Email**: support@github.com/jeansvaldez/agentlens
+- **Issues**: [GitHub Issues](https://github.com/jeanvaldez10/agent-lens/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/jeanvaldez10/agent-lens/discussions)
+- **Email**: support@github.com/jeanvaldez10/agent-lens
 
 ## 🙏 Acknowledgments
 

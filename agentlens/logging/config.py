@@ -1,7 +1,28 @@
 import logging
 import os
+import sys
 
 from agentlens.logging.formatters import agentlensLogFileFormatter, agentlensLogFormatter
+
+
+class _CurrentStderrHandler(logging.StreamHandler):
+    """StreamHandler that writes to whatever ``sys.stderr`` is at emit time.
+
+    A plain ``StreamHandler`` binds the stream object at creation. If that stream is later
+    replaced and closed (e.g. by pytest's output capture, or during interpreter shutdown),
+    every subsequent log call - including ones from ``atexit`` hooks and ``__del__`` -
+    fails with "I/O operation on closed file". Mirrors ``logging.lastResort``.
+    """
+
+    @property
+    def stream(self):
+        return sys.stderr
+
+    @stream.setter
+    def stream(self, value):
+        # The stream is always resolved dynamically; ignore assignments from the base class.
+        pass
+
 
 # Create the logger at module level
 logger = logging.getLogger("agentlens")
@@ -41,9 +62,10 @@ def configure_logging(config=None):  # Remove type hint temporarily to avoid cir
     # Remove existing handlers
     for handler in logger.handlers[:]:
         logger.removeHandler(handler)
+        handler.close()
 
     # Configure console logging
-    stream_handler = logging.StreamHandler()
+    stream_handler = _CurrentStderrHandler()
     stream_handler.setLevel(log_level)
     stream_handler.setFormatter(agentlensLogFormatter())
     logger.addHandler(stream_handler)

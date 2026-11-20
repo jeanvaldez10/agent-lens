@@ -3,7 +3,7 @@ title: 'OpenAI Assistants'
 description: 'Learn how to use OpenAI Assistants API with agentlens'
 mode: "wide"
 ---
-_View Notebook on <a href={'https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/openai_assistants_example.ipynb'} target={'_blank'}>Github</a>_
+_View Notebook on <a href={'https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/openai_assistants_example.ipynb'} target={'_blank'}>Github</a>_
 
 
 {/*  SOURCE_FILE: examples/openai_examples/openai_assistants_example.ipynb  */}
@@ -14,7 +14,7 @@ This notebook has been adapted from this OpenAI Cookbook [example](https://cookb
 
 The new [Assistants API](https://platform.openai.com/docs/assistants/overview) is a stateful evolution of our [Chat Completions API](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) meant to simplify the creation of assistant-like experiences, and enable developer access to powerful tools like Code Interpreter and Retrieval.
 
-![Assistants API Diagram](https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/images/assistants_overview_diagram.png)
+![Assistants API Diagram](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/images/assistants_overview_diagram.png)
 
 ## Chat Completions API vs Assistants API
 
@@ -62,26 +62,26 @@ def show_json(obj):
 The easiest way to get started with the Assistants API is through the [Assistants Playground](https://platform.openai.com/playground).
 
 
-![Assistants Playground](https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/images/assistants_overview_assistants_playground.png)
+![Assistants Playground](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/images/assistants_overview_assistants_playground.png)
 
 
 Let's begin by creating an assistant! We'll create a Math Tutor just like in our [docs](https://platform.openai.com/docs/assistants/overview).
 
 
-![Creating New Assistant](https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/images/assistants_overview_new_assistant.png)
+![Creating New Assistant](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/images/assistants_overview_new_assistant.png)
 
 
 You can view Assistants you've created in the [Assistants Dashboard](https://platform.openai.com/assistants).
 
 
-![Assistants Dashboard](https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/images/assistants_overview_assistants_dashboard.png)
+![Assistants Dashboard](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/images/assistants_overview_assistants_dashboard.png)
 
 
 You can also create Assistants directly through the Assistants API. But we need to have the agentlens and OpenAI API keys first.
 
 You can get your OpenAI API key from the [OpenAI Dashboard](https://platform.openai.com/api-keys).
 
-To obtain the agentlens API key, signup for an account on [agentlens](https://github.com/jeansvaldez/agentlens/) and create a project. After creating the project, you can now create an API key in the [Project Settings](http://localhost:3000/settings/projects).
+To obtain the agentlens API key, signup for an account on [agentlens](https://github.com/jeanvaldez10/agent-lens/) and create a project. After creating the project, you can now create an API key in the [Project Settings](http://localhost:3000/settings/projects).
 
 Next, we'll set our API keys. There are several ways to do this, the code below is just the most foolproof way for the purposes of this notebook. It accounts for both users who use environment variables and those who just want to set the API Key here in this notebook.
 
@@ -360,7 +360,7 @@ A key feature of the Assistants API is the ability to equip our Assistants with 
 Let's equip our Math Tutor with the [Code Interpreter](https://platform.openai.com/docs/assistants/tools/code-interpreter) tool, which we can do from the Dashboard...
 
 
-![Enabling code interpreter](https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/images/assistants_overview_enable_code_interpreter.png)
+![Enabling code interpreter](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/images/assistants_overview_enable_code_interpreter.png)
 
 
 ...or the API, using the Assistant ID.
@@ -432,7 +432,7 @@ The second Step is a `message_creation`, which contains the `message` that was a
 Another powerful tool in the Assistants API is [Retrieval](https://platform.openai.com/docs/assistants/tools/knowledge-retrieval): the ability to upload files that the Assistant will use as a knowledge base when answering questions. This can also be enabled from the Dashboard or the API, where we can upload files we want to be used.
 
 
-![Enabling retrieval](https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/images/assistants_overview_enable_retrieval.png)
+![Enabling retrieval](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/images/assistants_overview_enable_retrieval.png)
 
 
 
@@ -575,7 +575,7 @@ function_json = {
 Once again, let's update our Assistant either through the Dashboard or the API.
 
 
-![Enabling custom function](https://github.com/jeansvaldez/agentlens/blob/main/examples/openai_examples/images/assistants_overview_enable_function.png)
+![Enabling custom function](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/openai_examples/images/assistants_overview_enable_function.png)
 
 > **Note**
 > Pasting the function JSON into the Dashboard was a bit finicky due to indentation, etc. I just asked ChatGPT to format my function the same as one of the examples on the Dashboard :).

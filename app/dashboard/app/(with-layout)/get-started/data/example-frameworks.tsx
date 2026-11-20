@@ -18,7 +18,7 @@ export const exampleNotebooks = [
         id: 'crewai-job-posting',
         name: 'Job Posting Generator',
         framework: 'CrewAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/crewai/job_posting.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/crewai/job_posting.ipynb',
         description: [
             '• Multi-agent system for creating job postings',
             '• Research Analyst for company culture insights',
@@ -33,7 +33,7 @@ export const exampleNotebooks = [
         id: 'openai-agents-customer-service',
         name: 'Customer Service System',
         framework: 'OpenAI Agents SDK',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai_agents/customer_service_agent.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai_agents/customer_service_agent.ipynb',
         description: [
             '• Multi-agent airline customer service system',
             '• FAQ Agent for common questions',
@@ -48,7 +48,7 @@ export const exampleNotebooks = [
         id: 'google-adk-approval',
         name: 'Human Approval Workflow',
         framework: 'Google ADK',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/google_adk/human_approval.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/google_adk/human_approval.ipynb',
         description: [
             '• Implement human-in-the-loop workflows',
             '• Add approval steps for critical decisions',
@@ -62,7 +62,7 @@ export const exampleNotebooks = [
         id: 'agno-research-team',
         name: 'Research Team Collaboration',
         framework: 'Agno',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/agno/agno_research_team.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/agno/agno_research_team.ipynb',
         description: [
             '• Four specialized research agents working together',
             '• Reddit, HackerNews, Academic, and Twitter researchers',
@@ -77,7 +77,7 @@ export const exampleNotebooks = [
         id: 'ag2-async-human-input',
         name: 'Agent Chat with Async Human Inputs',
         framework: 'AG2',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/ag2/async_human_input.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/ag2/async_human_input.ipynb',
         description: [
             '• Build interactive agents that handle asynchronous human inputs',
             '• Create interview question generators with real-time feedback loops',
@@ -91,7 +91,7 @@ export const exampleNotebooks = [
         id: 'autogen-agent-chat',
         name: 'Multi-Agent Chat',
         framework: 'AutoGen',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/autogen/AgentChat.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/autogen/AgentChat.ipynb',
         description: [
             '• Create conversations between multiple AI agents',
             '• Implement different agent roles and capabilities',
@@ -105,7 +105,7 @@ export const exampleNotebooks = [
         id: 'langgraph-example',
         name: 'LangGraph Agent Workflows',
         framework: 'LangGraph',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/langgraph/langgraph_example.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/langgraph/langgraph_example.ipynb',
         description: [
             '• Build stateful multi-agent workflows',
             '• Create complex agent orchestrations',
@@ -118,7 +118,7 @@ export const exampleNotebooks = [
         id: 'smolagents-text-to-sql',
         name: 'Text-to-SQL Agent',
         framework: 'SmolAgents',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/smolagents/text_to_sql.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/smolagents/text_to_sql.ipynb',
         description: [
             '• Natural language to SQL query generation',
             '• Database interaction through conversation',
@@ -132,7 +132,7 @@ export const exampleNotebooks = [
         id: 'llamaindex-example',
         name: 'RAG Application',
         framework: 'LlamaIndex',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/llamaindex/llamaindex_example.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/llamaindex/llamaindex_example.ipynb',
         description: [
             '• Build intelligent document Q&A systems',
             '• Implement vector stores and retrieval augmentation',
@@ -146,7 +146,7 @@ export const exampleNotebooks = [
         id: 'litellm-example',
         name: 'Unified LLM Interface',
         framework: 'LiteLLM',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/litellm/litellm_example.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/litellm/litellm_example.ipynb',
         description: [
             '• Use 100+ LLMs with a unified interface',
             '• Work with OpenAI, Anthropic, Cohere, and more',
@@ -160,7 +160,7 @@ export const exampleNotebooks = [
         id: 'mem0-memory',
         name: 'Memory System',
         framework: 'Mem0',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/mem0/mem0_memory_example.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/mem0/mem0_memory_example.ipynb',
         description: [
             '• Build agents with persistent memory',
             '• Store and retrieve user preferences',
@@ -172,7 +172,7 @@ export const exampleNotebooks = [
         id: 'mem0-memoryclient',
         name: 'Memory Client Example',
         framework: 'Mem0',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/mem0/mem0_memoryclient_example.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/mem0/mem0_memoryclient_example.ipynb',
         description: [
             '• Advanced memory client implementation',
             '• Cross-session memory management',
@@ -186,7 +186,7 @@ export const exampleNotebooks = [
         id: 'anthropic-sync',
         name: 'Claude Integration (Sync)',
         framework: 'Anthropic',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/anthropic/anthropic-example-sync.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/anthropic/anthropic-example-sync.ipynb',
         description: [
             '• Get started with Anthropic\'s Claude models',
             '• Implement synchronous API calls',
@@ -198,7 +198,7 @@ export const exampleNotebooks = [
         id: 'anthropic-async',
         name: 'Claude Integration (Async)',
         framework: 'Anthropic',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/anthropic/anthropic-example-async.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/anthropic/anthropic-example-async.ipynb',
         description: [
             '• Asynchronous Claude API implementation',
             '• Improved performance and scalability',
@@ -210,7 +210,7 @@ export const exampleNotebooks = [
         id: 'anthropic-tools',
         name: 'Understanding Tools with Claude',
         framework: 'Anthropic',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/anthropic/agentlens-anthropic-understanding-tools.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/anthropic/agentlens-anthropic-understanding-tools.ipynb',
         description: [
             '• Explore Claude\'s tool-use capabilities',
             '• Implement function calling and API integrations',
@@ -222,7 +222,7 @@ export const exampleNotebooks = [
         id: 'smolagents-multi-system',
         name: 'Multi-Agent System',
         framework: 'SmolAgents',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/smolagents/multi_smolagents_system.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/smolagents/multi_smolagents_system.ipynb',
         description: [
             '• Orchestrate multiple SmolAgents',
             '• Complex task decomposition',
@@ -236,7 +236,7 @@ export const exampleNotebooks = [
         id: 'xai-grok',
         name: 'Grok Integration',
         framework: 'xAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/xai/grok_examples.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/xai/grok_examples.ipynb',
         description: [
             '• Integrate xAI\'s Grok models',
             '• Advanced language understanding',
@@ -248,7 +248,7 @@ export const exampleNotebooks = [
         id: 'xai-grok-vision',
         name: 'Grok Vision',
         framework: 'xAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/xai/grok_vision_examples.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/xai/grok_vision_examples.ipynb',
         description: [
             '• Multimodal AI with Grok Vision',
             '• Process images and text together',
@@ -263,7 +263,7 @@ export const exampleNotebooks = [
         id: 'agno-workflow-setup',
         name: 'Workflow Automation',
         framework: 'Agno',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/agno/agno_workflow_setup.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/agno/agno_workflow_setup.ipynb',
         description: [
             '• Complex agent workflows with dependencies',
             '• Task orchestration and automation',
@@ -275,7 +275,7 @@ export const exampleNotebooks = [
         id: 'agno-basic-agents',
         name: 'Basic Agent Setup',
         framework: 'Agno',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/agno/agno_basic_agents.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/agno/agno_basic_agents.ipynb',
         description: [
             '• Introduction to Agno agent framework',
             '• Create and configure basic agents',
@@ -287,7 +287,7 @@ export const exampleNotebooks = [
         id: 'agno-async-operations',
         name: 'Async Agent Operations',
         framework: 'Agno',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/agno/agno_async_operations.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/agno/agno_async_operations.ipynb',
         description: [
             '• Asynchronous agent operations',
             '• Concurrent task execution',
@@ -299,7 +299,7 @@ export const exampleNotebooks = [
         id: 'openai-agents-tools',
         name: 'Tools Demonstration',
         framework: 'OpenAI Agents SDK',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai_agents/agents_tools.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai_agents/agents_tools.ipynb',
         description: [
             '• Code Interpreter for calculations and data analysis',
             '• File Search through vector stores and documents',
@@ -312,7 +312,7 @@ export const exampleNotebooks = [
         id: 'openai-agents-guardrails',
         name: 'Agent Guardrails',
         framework: 'OpenAI Agents SDK',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai_agents/agent_guardrails.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai_agents/agent_guardrails.ipynb',
         description: [
             '• Implement safety constraints for AI agents',
             '• Control agent behavior and responses',
@@ -324,7 +324,7 @@ export const exampleNotebooks = [
         id: 'openai-agents-patterns',
         name: 'Agent Patterns',
         framework: 'OpenAI Agents SDK',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai_agents/agent_patterns.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai_agents/agent_patterns.ipynb',
         description: [
             '• Common patterns for building AI agents',
             '• Best practices and architectural approaches',
@@ -336,7 +336,7 @@ export const exampleNotebooks = [
         id: 'openai-sync',
         name: 'OpenAI Example (Sync)',
         framework: 'OpenAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai/openai_example_sync.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai/openai_example_sync.ipynb',
         description: [
             '• Create story-generating chatbots using GPT models',
             '• Implement synchronous API calls with OpenAI',
@@ -348,7 +348,7 @@ export const exampleNotebooks = [
         id: 'openai-async',
         name: 'OpenAI Example (Async)',
         framework: 'OpenAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai/openai_example_async.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai/openai_example_async.ipynb',
         description: [
             '• Build asynchronous OpenAI applications',
             '• Improve performance and scalability',
@@ -360,7 +360,7 @@ export const exampleNotebooks = [
         id: 'openai-web-search',
         name: 'Web Search with OpenAI',
         framework: 'OpenAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai/web_search.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai/web_search.ipynb',
         description: [
             '• Use OpenAI\'s new Responses API with built-in web search',
             '• Create multimodal, tool-augmented interactions',
@@ -372,7 +372,7 @@ export const exampleNotebooks = [
         id: 'openai-multi-tool',
         name: 'Multi Tool Orchestration',
         framework: 'OpenAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/openai/multi_tool_orchestration.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/openai/multi_tool_orchestration.ipynb',
         description: [
             '• Implement advanced RAG workflows with intelligent routing',
             '• Combine web search with vector databases (Pinecone)',
@@ -385,7 +385,7 @@ export const exampleNotebooks = [
         id: 'google-genai-example',
         name: 'Google Gemini Example',
         framework: 'Google Gemini',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/google_genai/google_genai_example.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/google_genai/google_genai_example.ipynb',
         description: [
             '• Harness Google\'s Gemini models for multimodal AI',
             '• Process text, images, and code understanding',
@@ -399,7 +399,7 @@ export const exampleNotebooks = [
         id: 'watsonx-text-chat',
         name: 'WatsonX Text & Chat',
         framework: 'WatsonX',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/watsonx/watsonx-text-chat.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/watsonx/watsonx-text-chat.ipynb',
         description: [
             '• Integrate IBM WatsonX with conversational AI',
             '• Build enterprise-grade chat applications',
@@ -411,7 +411,7 @@ export const exampleNotebooks = [
         id: 'watsonx-streaming',
         name: 'WatsonX Streaming',
         framework: 'WatsonX',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/watsonx/watsonx-streaming.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/watsonx/watsonx-streaming.ipynb',
         description: [
             '• Implement streaming responses with WatsonX',
             '• Build real-time AI applications',
@@ -423,7 +423,7 @@ export const exampleNotebooks = [
         id: 'watsonx-tokenization',
         name: 'WatsonX Tokenization Model',
         framework: 'WatsonX',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/watsonx/watsonx-tokeniation-model.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/watsonx/watsonx-tokeniation-model.ipynb',
         description: [
             '• Understand token usage and optimization',
             '• Implement custom tokenization strategies',
@@ -435,7 +435,7 @@ export const exampleNotebooks = [
         id: 'ag2-wikipedia-search',
         name: 'AG2 Wikipedia Search Tools',
         framework: 'AG2',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/ag2/tools_wikipedia_search.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/ag2/tools_wikipedia_search.ipynb',
         description: [
             '• Integrate Wikipedia search capabilities into AG2 agents',
             '• Use WikipediaQueryRunTool for quick searches',
@@ -447,7 +447,7 @@ export const exampleNotebooks = [
         id: 'agno-tool-integrations',
         name: 'Tool Integration Suite',
         framework: 'Agno',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/agno/agno_tool_integrations.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/agno/agno_tool_integrations.ipynb',
         description: [
             '• Comprehensive tool integration examples',
             '• Web search, file operations, and API calls',
@@ -459,7 +459,7 @@ export const exampleNotebooks = [
         id: 'crewai-markdown-validator',
         name: 'Markdown Validator',
         framework: 'CrewAI',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/crewai/markdown_validator.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/crewai/markdown_validator.ipynb',
         description: [
             '• Automated markdown document validation',
             '• Format checking and correction',
@@ -471,7 +471,7 @@ export const exampleNotebooks = [
         id: 'autogen-math-agent',
         name: 'Math Problem Solver',
         framework: 'AutoGen',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/autogen/MathAgent.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/autogen/MathAgent.ipynb',
         description: [
             '• Specialized agent for solving mathematical problems',
             '• Step-by-step solution explanations',
@@ -484,7 +484,7 @@ export const exampleNotebooks = [
         id: 'langchain-example',
         name: 'LangChain Agent Implementation',
         framework: 'LangChain',
-        colabUrl: 'https://colab.research.google.com/github/jeansvaldez/agentlens/blob/main/examples/langchain/langchain_examples.ipynb',
+        colabUrl: 'https://colab.research.google.com/github/jeanvaldez10/agent-lens/blob/main/examples/langchain/langchain_examples.ipynb',
         description: [
             '• Integrate agentlens with LangChain agents',
             '• Use LangchainCallbackHandler for automatic tracking',

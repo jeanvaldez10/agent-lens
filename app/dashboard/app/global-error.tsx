@@ -61,7 +61,7 @@ export default function GlobalError({
                 <b>Something went wrong</b>
               </h2>
               <h3 className="mt-4 text-xl font-normal text-gray-600 dark:text-gray-400">
-                We’ve been notified. Try again or contact support alex@github.com/jeansvaldez/agentlens
+                We’ve been notified. Try again or contact support alex@github.com/jeanvaldez10/agent-lens
               </h3>
               <Separator className="mt-8" />
               <div className="mt-4 flex gap-3">

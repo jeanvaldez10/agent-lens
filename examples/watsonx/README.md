@@ -61,4 +61,4 @@ You can explore other available models through the IBM Watsonx platform.
 
 These examples show how to use agentlens to monitor and analyze your AI applications. agentlens automatically instruments your IBM Watsonx AI calls to provide insights into performance, usage patterns, and model behavior.
 
-To learn more about agentlens, visit [https://www.github.com/jeansvaldez/agentlens](https://www.github.com/jeansvaldez/agentlens)
+To learn more about agentlens, visit [https://www.github.com/jeanvaldez10/agent-lens](https://www.github.com/jeanvaldez10/agent-lens)

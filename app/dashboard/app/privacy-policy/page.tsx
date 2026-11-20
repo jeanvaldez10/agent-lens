@@ -13,7 +13,7 @@ export default async function PrivacyPolicy() {
       </p>
       <p className="mb-4 mt-2">
         For purposes of this Agreement, “Site” refers to the Company’s website, which can be
-        accessed at www.github.com/jeansvaldez/agentlens and www.staf.ai.
+        accessed at www.github.com/jeanvaldez10/agent-lens and www.staf.ai.
       </p>
       <p className="mb-4 mt-2">
         Service” refers to the Company’s services accessed via the Site, in which users can view
@@ -80,7 +80,7 @@ export default async function PrivacyPolicy() {
         under the age of 13 to sign up for the Service. In the event that we learn that we have
         gathered personal information from anyone under the age of 13 without the consent of a
         parent or guardian, we will delete that information as soon as possible. If you believe we
-        have collected such information, please contact us at alex@github.com/jeansvaldez/agentlens.
+        have collected such information, please contact us at alex@github.com/jeanvaldez10/agent-lens.
       </p>
       <h2 className="text-xl font-semibold">II. HOW WE USE AND SHARE INFORMATION</h2>
       <h3 className="text-lg font-semibold">Personal Information:</h3>
@@ -145,9 +145,9 @@ export default async function PrivacyPolicy() {
         When we send a promotional communication to a user, the user can opt out of further
         promotional communications by following the unsubscribe instructions provided in each
         promotional e-mail. You can also indicate that you do not wish to receive marketing
-        communications from us by emailing alex@github.com/jeansvaldez/agentlens of the Site. Please note that
+        communications from us by emailing alex@github.com/jeanvaldez10/agent-lens of the Site. Please note that
         notwithstanding the promotional preferences you indicate by either unsubscribing or opting
-        out at alex@github.com/jeansvaldez/agentlens, we may continue to send you administrative emails including, for
+        out at alex@github.com/jeanvaldez10/agent-lens, we may continue to send you administrative emails including, for
         example, periodic updates to our Privacy Policy.
       </p>
       <h2 className="text-xl font-semibold">V. LINKS TO OTHER WEBSITES</h2>
@@ -192,7 +192,7 @@ export default async function PrivacyPolicy() {
       <h2 className="text-xl font-semibold">VIII. CONTACT US</h2>
       <p className="mb-4 mt-2">
         If you have any questions regarding this Privacy Policy or the practices of this Site,
-        please contact us by sending an email to alex@github.com/jeansvaldez/agentlens.
+        please contact us by sending an email to alex@github.com/jeanvaldez10/agent-lens.
       </p>
       <p className="mb-4 mt-2">
         Last Updated: This Privacy Policy was last updated on July 10, 2024.

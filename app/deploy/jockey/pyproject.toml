@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Standalone Kubernetes deployment package for agentlens"
 readme = "README.md"
 authors = [
-    {name = "agentlens", email = "support@github.com/jeansvaldez/agentlens"}
+    {name = "agentlens", email = "support@github.com/jeanvaldez10/agent-lens"}
 ]
 license = {text = "MIT"}
 classifiers = [

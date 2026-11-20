@@ -27,7 +27,7 @@ Even if you're not ready to contribute code, we'd love to hear your thoughts. Dr
 ## Getting Started
 
 1. **Fork and Clone**:
-   First, fork the repository by clicking the 'Fork' button in the top right of the [agentlens repository](https://github.com/jeansvaldez/agentlens). This creates your own copy of the repository where you can make changes.
+   First, fork the repository by clicking the 'Fork' button in the top right of the [agentlens repository](https://github.com/jeanvaldez10/agent-lens). This creates your own copy of the repository where you can make changes.
 
    Then clone your fork:
    ```bash
@@ -37,7 +37,7 @@ Even if you're not ready to contribute code, we'd love to hear your thoughts. Dr
 
    Add the upstream repository to stay in sync:
    ```bash
-   git remote add upstream https://github.com/jeansvaldez/agentlens.git
+   git remote add upstream https://github.com/jeanvaldez10/agent-lens.git
    git fetch upstream
    ```
 
@@ -364,11 +364,11 @@ We encourage active community participation and are here to help!
 ### Preferred Communication Channels
 
 1. **GitHub Issues & Discussions**:
-   - Open an [issue](https://github.com/jeansvaldez/agentlens/issues) for:
+   - Open an [issue](https://github.com/jeanvaldez10/agent-lens/issues) for:
      - Bug reports
      - Feature requests
      - Documentation improvements
-   - Start a [discussion](https://github.com/jeansvaldez/agentlens/discussions) for:
+   - Start a [discussion](https://github.com/jeanvaldez10/agent-lens/discussions) for:
      - Questions about usage
      - Ideas for new features
      - Community showcase
@@ -382,7 +382,7 @@ We encourage active community participation and are here to help!
      - Sharing your projects
 
 3. **Contact Form**:
-   - For private inquiries, use our [contact form](https://github.com/jeansvaldez/agentlens/contact)
+   - For private inquiries, use our [contact form](https://github.com/jeanvaldez10/agent-lens/contact)
    - Please note that public channels are preferred for technical discussions
 
 ## License

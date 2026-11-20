@@ -143,7 +143,7 @@ def generate_mdx_content(notebook_path, processed_content, frontmatter=None):
 ---
 {{/*  SOURCE_FILE: {notebook_path}  */}}
 
-_View Notebook on <a href={{'https://github.com/jeansvaldez/agentlens/blob/main/{notebook_path}'}} target={{'_blank'}}>Github</a>_
+_View Notebook on <a href={{'https://github.com/jeanvaldez10/agent-lens/blob/main/{notebook_path}'}} target={{'_blank'}}>Github</a>_
 
 {processed_content}
 

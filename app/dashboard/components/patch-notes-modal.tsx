@@ -61,7 +61,7 @@ const defaultPatchNotes: PatchNote[] = [
     title: 'LangGraph Integration',
     description: 'Connect agentlens workflows to LangGraph for richer automation & visualization',
     link: {
-      href: 'https://github.com/jeansvaldez/agentlens/v2/integrations/langgraph',
+      href: 'https://github.com/jeanvaldez10/agent-lens/v2/integrations/langgraph',
       text: 'View docs'
     }
   },
@@ -80,7 +80,7 @@ const defaultPatchNotes: PatchNote[] = [
     title: 'Public API Launched & Refined',
     description: 'Easier external integrations with greater stability',
     link: {
-      href: 'https://github.com/jeansvaldez/agentlens/v2/usage/public-api',
+      href: 'https://github.com/jeanvaldez10/agent-lens/v2/usage/public-api',
       text: 'API docs'
     }
   },
@@ -119,7 +119,7 @@ const defaultPatchNotes: PatchNote[] = [
 export function PatchNotesModal({
   version = '0.4.17',
   patchNotes = defaultPatchNotes,
-  changelogUrl = 'https://github.com/jeansvaldez/agentlens/blog/v0.4.17',
+  changelogUrl = 'https://github.com/jeanvaldez10/agent-lens/blog/v0.4.17',
   open,
   onOpenChange
 }: PatchNotesModalProps) {

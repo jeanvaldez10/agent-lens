@@ -73,7 +73,7 @@ export default function Home() {
       <Navbar
         items={[
           { text: 'Pricing', href: '/pricing' },
-          { text: 'Docs', href: 'https://github.com/jeansvaldez/agentlens' },
+          { text: 'Docs', href: 'https://github.com/jeanvaldez10/agent-lens' },
         ]}
       />
       <Banner />
@@ -140,7 +140,7 @@ function Banner() {
               Get Started <MoveRight className="my-2 ml-1 w-4" />
             </Link>
             <Link
-              href="https://github.com/jeansvaldez/agentlens"
+              href="https://github.com/jeanvaldez10/agent-lens"
               className="hover:bg-primary-button-hover bg-primary-button shadow-primary-button flex items-center rounded-md bg-cover px-5 font-medium text-white"
             >
               <BookOpen className="my-2 mr-1 w-4" /> Docs
@@ -377,7 +377,7 @@ function GetStarted() {
             Get Started <MoveRight className="my-2 ml-1 w-4" />
           </Link>
           <Link
-            href="https://github.com/jeansvaldez/agentlens"
+            href="https://github.com/jeanvaldez10/agent-lens"
             className="hover:bg-primary-button-hover bg-primary-button shadow-primary-button flex items-center rounded-md bg-cover px-5 font-medium text-white"
           >
             <BookOpen className="my-2 mr-1 w-4" /> Docs

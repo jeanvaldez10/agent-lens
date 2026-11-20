@@ -30,7 +30,7 @@ def clean_html_content(text):
     return "\n".join(cleaned_lines)
 
 
-def convert_relative_urls(text, base_url="https://github.com/jeansvaldez/agentlens/blob/main"):
+def convert_relative_urls(text, base_url="https://github.com/jeanvaldez10/agent-lens/blob/main"):
     """Convert relative URLs to absolute URLs for llms.txt compliance."""
 
     def replace_relative_link(match):

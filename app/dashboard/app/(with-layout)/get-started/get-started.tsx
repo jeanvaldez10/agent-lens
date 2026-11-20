@@ -494,12 +494,12 @@ export default function EmptyProject() {
                 <h2 className="mb-4 text-xl font-semibold">Need help?</h2>
                 <div className="space-y-4">
                   <Button variant="outline" asChild className="w-full">
-                    <Link href="https://github.com/jeansvaldez/agentlens" target="_blank">
+                    <Link href="https://github.com/jeanvaldez10/agent-lens" target="_blank">
                       Read the docs
                     </Link>
                   </Button>
                   <Button variant="outline" asChild className="w-full">
-                    <Link href="https://github.com/jeansvaldez/agentlens/issues" target="_blank">
+                    <Link href="https://github.com/jeanvaldez10/agent-lens/issues" target="_blank">
                       Raise an issue
                     </Link>
                   </Button>

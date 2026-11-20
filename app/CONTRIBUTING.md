@@ -16,7 +16,7 @@ Thank you for your interest in contributing to agentlens! We welcome contributio
 
 ## 🤝 Code of Conduct
 
-This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to [conduct@github.com/jeansvaldez/agentlens](mailto:conduct@github.com/jeansvaldez/agentlens).
+This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to [conduct@github.com/jeanvaldez10/agent-lens](mailto:conduct@github.com/jeanvaldez10/agent-lens).
 
 ### Our Standards
 
@@ -69,7 +69,7 @@ Make sure you have the following installed:
    ```
 3. **Add the upstream remote**:
    ```bash
-   git remote add upstream https://github.com/jeansvaldez/agentlens.git
+   git remote add upstream https://github.com/jeanvaldez10/agent-lens.git
    ```
 
 ### Environment Setup
@@ -402,7 +402,7 @@ docs/
 - **GitHub Issues**: For bugs and feature requests
 - **GitHub Discussions**: For questions and general discussion
 - **Discord**: For real-time chat and community support
-- **Email**: [support@github.com/jeansvaldez/agentlens](mailto:support@github.com/jeansvaldez/agentlens) for private matters
+- **Email**: [support@github.com/jeanvaldez10/agent-lens](mailto:support@github.com/jeanvaldez10/agent-lens) for private matters
 
 ### Helping Others
 
@@ -434,7 +434,7 @@ We use labels to categorize and prioritize issues:
 
 ## 🎯 Roadmap
 
-Check out our [public roadmap](https://github.com/jeansvaldez/agentlens/projects) to see what we're working on and where you can help.
+Check out our [public roadmap](https://github.com/jeanvaldez10/agent-lens/projects) to see what we're working on and where you can help.
 
 ### Current Focus Areas
 

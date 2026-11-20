@@ -295,7 +295,7 @@ export const BaseDrilldownDrawer = ({
                                 You can name your traces when creating them manually. This helps organize and identify your traces more easily.
                               </p>
                               <a
-                                href="https://github.com/jeansvaldez/agentlens/v2/concepts/traces#manual-trace-creation"
+                                href="https://github.com/jeanvaldez10/agent-lens/v2/concepts/traces#manual-trace-creation"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block text-blue-300 hover:text-blue-200 underline"

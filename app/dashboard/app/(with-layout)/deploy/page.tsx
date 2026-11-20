@@ -176,7 +176,7 @@ export default function DeployPage() {
           <Button
             variant="outline"
             className="flex items-center gap-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
-            onClick={() => window.open('https://github.com/jeansvaldez/agentlens/deployment', '_blank')}
+            onClick={() => window.open('https://github.com/jeanvaldez10/agent-lens/deployment', '_blank')}
           >
             <BookOpen className="h-4 w-4" />
             Documentation
@@ -184,7 +184,7 @@ export default function DeployPage() {
           <Button
             variant="outline" 
             className="flex items-center gap-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
-            onClick={() => window.open('https://github.com/jeansvaldez/agentlens/tutorials/deploy', '_blank')}
+            onClick={() => window.open('https://github.com/jeanvaldez10/agent-lens/tutorials/deploy', '_blank')}
           >
             <PlayCircle className="h-4 w-4" />
             Tutorial

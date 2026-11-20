@@ -14,7 +14,7 @@ agentlens helps developers build, evaluate, and monitor AI agents. From prototyp
 
 ## Open Source
 
-The agentlens app is open source under the MIT license. Explore the code in our [app directory](https://github.com/jeansvaldez/agentlens/tree/main/app).
+The agentlens app is open source under the MIT license. Explore the code in our [app directory](https://github.com/jeanvaldez10/agent-lens/tree/main/app).
 
 ## Key Integrations 🔌
 
@@ -63,7 +63,7 @@ Looking to run the full agentlens app (Dashboard + API backend) on your machine?
 ### First class Developer Experience
 Add powerful observability to your agents, tools, and functions with as little code as possible: one line at a time.
 <br/>
-Refer to our [documentation](https://github.com/jeansvaldez/agentlens)
+Refer to our [documentation](https://github.com/jeanvaldez10/agent-lens)
 
 ```python
 # Create a session span (root for all other spans)
