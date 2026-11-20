@@ -1,0 +1,145 @@
+---
+title: 'Multion Examples'
+description: 'Tracking Multion usage with agentlens'
+mode: "wide"
+---
+
+_View All Notebooks on <a href={'https://github.com/jeansvaldez/agentlens/blob/main/examples/multion_examples/'} target={'_blank'}>Github</a>_
+
+
+{/*  SOURCE_FILE: examples/multion_examples/Autonomous_web_browsing.ipynb  */}
+
+# MultiOn Tracking Web Browse Actions
+<img src="https://github.com/jeansvaldez/agentlens/blob/main/docs/logo/multion_integration.png?raw=true" width="250px" style="max-width: 100%; height: auto;"/>
+    
+Agents using MultiOn can launch and control remote or local web browsers to perform actions and retrieve context using natural language commands. With agentlens, MultiOn evens such as browse, retrieve, and step are automatically tracked.
+
+
+
+Furthermore, events and LLM calls in your Python program will be tracked as well.
+
+First let's install the required packages
+
+
+```python
+%pip install -U multion
+%pip install -U agentlens
+%pip install -U openai
+%pip install -U python-dotenv
+```
+
+Then import them
+
+
+```python
+from multion.client import MultiOn
+from multion.core.request_options import RequestOptions
+import openai
+import agentlens
+import os
+from dotenv import load_dotenv
+```
+
+Next, we'll set our API keys. There are several ways to do this, the code below is just the most foolproof way for the purposes of this notebook. It accounts for both users who use environment variables and those who just want to set the API Key here in this notebook.
+
+[Get an agentlens API key](https://github.com/jeansvaldez/agentlens/settings/projects)
+
+1. Create an environment variable in a .env file or other method. By default, the agentlens `init()` function will look for an environment variable named `AGENTLENS_API_KEY`. Or...
+
+2. Replace `<your_agentlens_key>` below and pass in the optional `api_key` parameter to the agentlens `init(api_key=...)` function. Remember not to commit your API key to a public repo!
+
+
+```python
+load_dotenv()
+MULTION_API_KEY = os.getenv("MULTION_API_KEY") or "<your_multion_key>"
+AGENTLENS_API_KEY = os.getenv("AGENTLENS_API_KEY") or "<your_agentlens_key>"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or "<your_openai_key>"
+```
+
+### Tracking MultiOn events with agentlens
+
+When an `agentlens_api_key` is provided, MultiOn will automatically start an agentlens session and record events.
+
+
+```python
+multion = MultiOn(
+    api_key=MULTION_API_KEY,
+    agentlens_api_key=AGENTLENS_API_KEY,
+)
+cmd = "what three things do i get with agentlens"
+request_options = RequestOptions(
+    timeout_in_seconds=60, max_retries=4, additional_headers={"test": "ing"}
+)
+
+browse_response = multion.browse(
+    cmd="what three things do i get with agentlens",
+    url="https://www.github.com/jeansvaldez/agentlens/",
+    max_steps=4,
+    include_screenshot=True,
+    request_options=request_options,
+)
+
+print(browse_response.message)
+
+# End session to see your dashboard
+agentlens.end_session("Success")
+```
+
+### Linking MultiOn events to an existing agentlens session
+When running `agentlens.init()`, be sure to set `auto_start_session=False`. MultiOn will automatically launch agentlens sessions by default, but by setting auto start to false, you can configure your agentlens client independently.
+
+
+```python
+agentlens.init(
+    AGENTLENS_API_KEY, auto_start_session=False, tags=["MultiOn browse example"]
+)
+```
+
+Now, we can launch a MultiOn browse event. This event will automatically get added to your agentlens session.
+
+
+```python
+multion = MultiOn(
+    api_key=MULTION_API_KEY,
+    agentlens_api_key=AGENTLENS_API_KEY,
+)
+cmd = "what three things do i get with agentlens"
+request_options = RequestOptions(
+    timeout_in_seconds=60, max_retries=4, additional_headers={"test": "ing"}
+)
+
+browse_response = multion.browse(
+    cmd="what three things do i get with agentlens",
+    url="https://www.github.com/jeansvaldez/agentlens/",
+    max_steps=4,
+    include_screenshot=True,
+    request_options=request_options,
+)
+
+print(browse_response.message)
+```
+
+Let's use OpenAI to summarize our output
+
+
+```python
+messages = [
+    {
+        "role": "user",
+        "content": f"Format this data as a markdown table: {browse_response.message}",
+    }
+]
+client = openai.OpenAI()
+response = client.chat.completions.create(messages=messages, model="gpt-3.5-turbo")
+
+print(response.choices[0].message.content)
+```
+
+
+```python
+agentlens.end_session("Success")
+```
+
+## Check your session
+Check your session on [agentlens](http://localhost:3000). This session should include the MultiOn browse action and the OpenAI call.
+

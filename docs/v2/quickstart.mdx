@@ -1,0 +1,283 @@
+---
+title: "Quickstart"
+description: "Get started with agentlens in minutes with just 2 lines of code for basic monitoring, and explore powerful decorators for custom tracing."
+---
+
+agentlens is designed for easy integration into your AI agent projects, providing powerful observability with minimal setup. This guide will get you started quickly.
+
+<Check>[Give us a star on GitHub!](https://github.com/jeansvaldez/agentlens) Your support helps us grow. ⭐</Check>
+
+<Note title="Open Source">
+The agentlens app is open source—explore the code in our <a href="https://github.com/jeansvaldez/agentlens/tree/main/app">GitHub app directory</a>.
+</Note>
+
+<Note title="Chat with the docs in your IDE">
+Prefer asking your IDE? Install the Mintlify <a href="/v2/usage/mcp-docs"><strong>MCP Docs Server</strong></a> for agentlens to chat with the docs while you code:
+`npx mint-mcp add agentlens`
+</Note>
+
+## Installation
+First, install the agentlens SDK. We recommend including `python-dotenv` for easy API key management.
+<CodeGroup>
+  ```bash pip 
+  pip install agentlens python-dotenv
+  ```
+  ```bash poetry
+  poetry add agentlens python-dotenv
+  ```
+  ```bash uv
+  uv pip install agentlens python-dotenv
+  ```
+</CodeGroup>
+
+## Initial Setup (2 Lines of Code)
+
+At its simplest, agentlens can start monitoring your supported LLM and agent framework calls with just two lines of Python code.
+
+1.  **Import agentlens**: Add `import agentlens` to your script.
+2.  **Initialize agentlens**: Call `agentlens.init()` with your API key.
+
+<CodeGroup>
+```python Python
+import agentlens
+import os
+from dotenv import load_dotenv
+
+# Load environment variables (recommended for API keys)
+load_dotenv()
+
+# Initialize agentlens
+# The API key can be passed directly or set as an environment variable AGENTLENS_API_KEY
+AGENTLENS_API_KEY = os.getenv("AGENTLENS_API_KEY") 
+agentlens.init(AGENTLENS_API_KEY) 
+
+# That's it for basic auto-instrumentation!
+# If you're using a supported library (like OpenAI, LangChain, CrewAI, etc.),
+# agentlens will now automatically track LLM calls and agent actions.
+```
+</CodeGroup>
+
+### Setting Your agentlens API Key
+You need an agentlens API key to send data to your dashboard.
+- Get your API key from the [agentlens Dashboard](http://localhost:3000/settings/projects).
+
+It's best practice to set your API key as an environment variable.
+<CodeGroup>
+  ```bash Export to CLI
+  export AGENTLENS_API_KEY="your_agentlens_api_key_here"
+  ```
+  ```txt Set in .env file
+  AGENTLENS_API_KEY="your_agentlens_api_key_here"
+  ```
+</CodeGroup>
+If you use a `.env` file, make sure `load_dotenv()` is called before `agentlens.init()`.
+
+## Running Your Agent & Viewing Traces
+
+After adding the two lines and ensuring your API key is set up:
+1.  Run your agent application as you normally would.
+2.  agentlens will automatically instrument supported libraries and send trace data.
+3.  Visit your [agentlens Dashboard](http://localhost:3000/traces) to observe your agent's operations!
+
+
+## Beyond Automatic Instrumentation: Decorators
+
+While agentlens automatically instruments many popular libraries, you can gain finer-grained control and track custom parts of your code using our powerful decorators. This allows you to define specific operations, group logic under named agents, track tool usage with costs, and create custom traces.
+
+### Tracking Custom Operations with `@operation`
+Instrument any function in your code to create spans that track its execution, parameters, and return values. These operations will appear in your session visualization alongside LLM calls.
+```python
+from agentlens.sdk.decorators import operation
+
+@operation
+def process_data(data):
+    # Your function logic here
+    processed_result = data.upper()
+    # agentlens.record(Events("Processed Data", result=processed_result)) # Optional: record specific events
+    return processed_result
+
+# Example usage:
+# my_data = "example input"
+# output = process_data(my_data)
+```
+
+### Tracking Agent Logic with `@agent`
+If you structure your system with specific named agents (e.g., classes), use the `@agent` decorator on the class and `@operation` on its methods to group all downstream operations under that agent's context.
+```python
+from agentlens.sdk.decorators import agent, operation
+
+@agent(name="MyCustomAgent") # You can provide a name for the agent
+class MyAgent:
+    def __init__(self, agent_id):
+        self.agent_id = agent_id # agent_id is a reserved parameter for agentlens
+        
+    @operation
+    def perform_task(self, task_description):
+        # Agent task logic here
+        # This could include LLM calls or calls to other @operation decorated functions
+        return f"Agent {self.agent_id} completed: {task_description}"
+
+# Example usage:
+# research_agent = MyAgent(agent_id="researcher-001")
+# result = research_agent.perform_task("Analyze market trends")
+```
+
+### Tracking Tools with `@tool`
+Track the usage of specific tools or functions, and optionally associate costs with them. This data will be aggregated in your dashboard.
+```python
+from agentlens.sdk.decorators import tool
+
+@tool(name="WebSearchTool", cost=0.05) # Cost is optional
+def web_search(query: str) -> str:
+    # Tool logic here
+    return f"Search results for: {query}"
+    
+@tool # No cost specified
+def calculator(expression: str) -> str:
+    try:
+        return str(eval(expression))
+    except Exception as e:
+        return f"Error: {e}"
+
+# Example usage:
+# search_result = web_search("agentlens features")
+# calculation = calculator("2 + 2")
+```
+
+### Grouping with Traces (`@trace` or manual)
+Create custom traces to group a sequence of operations or define logical units of work. You can use the `@trace` decorator or manage traces manually for more complex scenarios.
+<Note>If `auto_start_session=False` in `agentlens.init()`, you must use `@trace` or `agentlens.start_trace()` for any data to be recorded.</Note>
+
+```python
+from agentlens.sdk.decorators import trace
+# Assuming MyAgent and web_search are defined as above
+
+# Option 1: Using the @trace decorator
+@trace(name="MyMainWorkflow", tags=["main-flow"])
+def my_workflow_decorated(task_to_perform):
+    # Your workflow code here
+    main_agent = MyAgent(agent_id="workflow-agent") # Assuming MyAgent is defined
+    result = main_agent.perform_task(task_to_perform)
+    # Example of using a tool within the trace
+    tool_result = web_search(f"details for {task_to_perform}") # Assuming web_search is defined
+    return result, tool_result
+    
+# result_decorated = my_workflow_decorated("complex data processing")
+
+# Option 2: Managing traces manually
+# import agentlens # Already imported
+
+# custom_trace = agentlens.start_trace(name="MyManualWorkflow", tags=["manual-flow"])
+# try:
+#     # Your code here
+#     main_agent = MyAgent(agent_id="manual-workflow-agent") # Assuming MyAgent is defined
+#     result = main_agent.perform_task("another complex task")
+#     tool_result = web_search(f"info for {result}") # Assuming web_search is defined
+#     agentlens.end_trace(custom_trace, end_state="Success", end_prompt=f"Completed: {result}")
+# except Exception as e:
+#     if custom_trace: # Ensure trace was started before trying to end it
+#         agentlens.end_trace(custom_trace, end_state="Fail", error_message=str(e))
+#     raise
+```
+
+### Updating Trace Metadata
+
+You can also update metadata on running traces to add context or track progress:
+
+```python
+from agentlens import update_trace_metadata
+
+# Update metadata during trace execution
+update_trace_metadata({
+    "operation_name": "AI Agent Processing",
+    "processing_stage": "data_validation",
+    "records_processed": 1500,
+    "user_id": "user_123",
+    "tags": ["validation", "production"]
+})
+```
+
+## Complete Example with Decorators
+
+Here's a consolidated example showcasing how these decorators can work together:
+```python
+import agentlens
+from agentlens.sdk.decorators import agent, operation, tool, trace
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
+AGENTLENS_API_KEY = os.getenv("AGENTLENS_API_KEY")
+
+# Initialize agentlens. 
+# Set auto_start_session=False because @trace will manage the session.
+agentlens.init(AGENTLENS_API_KEY, auto_start_session=False, tags=["quickstart-complete-example"])
+
+# Define a tool
+@tool(name="AdvancedSearch", cost=0.02)
+def advanced_web_search(query: str) -> str:
+    # Simulate a more advanced search
+    return f"Advanced search results for '{query}': [Details...]"
+
+# Define an agent class
+@agent(name="ResearchSpecialistAgent")
+class ResearchAgent:
+    def __init__(self, agent_id: str):
+        self.agent_id = agent_id # This will be used as the agent_id in agentlens
+        
+    @operation(name="ConductResearch")
+    def conduct_research(self, research_topic: str) -> str:
+        # Use the tool within the agent's operation
+        search_results = advanced_web_search(f"Deep dive into {research_topic}")
+        # Simulate further processing
+        analysis = f"Analysis of '{research_topic}': Based on '{search_results}', the key findings are..."
+        return analysis
+
+# Define a workflow using the @trace decorator
+@trace(name="FullResearchWorkflow", tags=["research", "analysis", "example"])
+def run_full_research_workflow(topic: str) -> str:
+    specialist_agent = ResearchAgent(agent_id="researcher-alpha-007")
+    research_findings = specialist_agent.conduct_research(topic)
+    
+    final_report = f"Research Report for '{topic}':\n{research_findings}"
+    # agentlens.record(Events("ReportGenerated", details=final_report)) # Optional: record a custom event
+    return final_report
+
+# Execute the workflow
+final_output = run_full_research_workflow("AI in healthcare")
+print(final_output)
+```
+
+## Next Steps
+
+You've seen how to get started with agentlens! Explore further to leverage its full potential:
+
+<CardGroup cols={2}>
+  <Card
+    title="Integrations"
+    icon="plug"
+    href="/v2/integrations"
+  >
+    See how agentlens automatically instruments popular LLM and agent frameworks.
+  </Card>
+  <Card
+    title="Examples"
+    icon="square-code"
+    href="/v2/examples"
+  >
+    Explore detailed examples for various use cases and integrations.
+  </Card>
+  <Card title="SDK Reference" icon="book-open" href="/v2/sdk-reference">
+    Dive deeper into the agentlens SDK capabilities and API.
+  </Card>
+  <Card title="Trace Decorator" icon="code" href="/v2/usage/trace-decorator">
+    Learn how to group operations and create custom traces using the @trace decorator.
+  </Card>
+</CardGroup>
+
+<script type="module" src="/scripts/github_stars.js"></script>
+<script type="module" src="/scripts/scroll-img-fadein-animation.js"></script>
+<script type="module" src="/scripts/button_heartbeat_animation.js"></script>
+<script type="css" src="/styles/styles.css"></script>
+<script type="module" src="/scripts/adjust_api_dynamically.js"></script>

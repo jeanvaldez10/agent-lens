@@ -1,0 +1,90 @@
+---
+title: 'CrewAI'
+description: 'agentlens and CrewAI teamed up to make monitoring Crew agents dead simple.'
+---
+
+import CodeTooltip from '/snippets/add-code-tooltip.mdx'
+import EnvTooltip from '/snippets/add-env-tooltip.mdx'
+
+[CrewAI](https://www.crewai.com/) is a framework for easily building multi-agent applications. Crew has comprehensive [documentation](https://docs.crewai.com) available as well as a great [quickstart](https://docs.crewai.com/how-to/Creating-a-Crew-and-kick-it-off/) guide.
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/sF_bgRuRa3s"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+<Steps>
+	<Step title="Install the agentlens SDK">
+		<CodeGroup>
+			```bash pip 
+			pip install agentlens
+			```
+			```bash poetry
+			poetry add agentlens
+			```
+		</CodeGroup>
+	</Step>
+	<Step title="Install Crew with agentlens">
+		<CodeGroup>
+			```bash pip 
+			pip install 'crewai[agentlens]'
+			```
+			```bash poetry
+			poetry add 'crewai[agentlens]'
+			```
+		</CodeGroup>
+	</Step>
+	<Step title="Add 2 lines of code">
+		<CodeTooltip/>
+			<CodeGroup>
+				```python python
+				import agentlens
+				agentlens.init(<INSERT YOUR API KEY HERE>)
+				```
+			</CodeGroup>
+		<EnvTooltip />
+      <CodeGroup>
+        ```python .env
+        AGENTLENS_API_KEY=<YOUR API KEY>
+        ```
+      </CodeGroup>
+      Read more about environment variables in [Advanced Configuration](/v1/usage/advanced-configuration)
+	</Step>
+	<Step title="Run your crew">
+		Execute your program and visit [app.github.com/jeansvaldez/agentlens/drilldown](http://localhost:3000/drilldown) to observe your Crew! 🕵️
+		<Tip>
+			After your run, agentlens prints a clickable url to console linking directly to your session in the Dashboard
+		</Tip> 
+		<div/>{/* Intentionally blank div for newline */}
+		<Frame type="glass" caption="Clickable link to session">
+			<img height="200" src="https://github.com/jeansvaldez/agentlens/blob/main/docs/images/link-to-session.gif?raw=true" />
+		</Frame>
+	</Step>
+</Steps>
+
+## Special Considerations with Crew
+The Crew framework is capable of determining when all tasks have been accomplished and to halt execution. agentlens will automatically end your active session
+when this determination is made. If you don't want your agentlens session to end at this time, add an optional parameter to your `agentlens.init()` call.
+
+```python
+agentlens.init(skip_auto_end_session=True)
+```
+
+## Crew + agentlens Examples
+
+<CardGroup cols={3}>
+    <Card title="Job Posting" icon="briefcase" href="https://github.com/Agentlens-AI/crewAI-examples/tree/main/job-posting" />
+	<Card title="Instagram Post" icon="instagram" href="https://github.com/Agentlens-AI/crewAI-examples/tree/main/instagram_post" />
+    <Card title="Markdown Validator" icon="markdown" href="https://github.com/Agentlens-AI/crewAI-examples/tree/main/markdown_validator" />
+</CardGroup>
+
+<script type="module" src="/scripts/github_stars.js"></script>
+<script type="module" src="/scripts/scroll-img-fadein-animation.js"></script>
+<script type="module" src="/scripts/button_heartbeat_animation.js"></script>
+<script type="css" src="/styles/styles.css"></script>
+<script type="module" src="/scripts/adjust_api_dynamically.js"></script>

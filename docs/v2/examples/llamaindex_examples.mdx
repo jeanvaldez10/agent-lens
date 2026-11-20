@@ -1,0 +1,136 @@
+---
+title: 'Llamaindex Examples Example'
+description: 'LlamaIndex agentlens Integration Example'
+---
+{/*  SOURCE_FILE: examples/llamaindex_examples/llamaindex_example.ipynb  */}
+
+_View Notebook on <a href={'https://github.com/jeansvaldez/agentlens/blob/main/examples/llamaindex_examples/llamaindex_example.ipynb'} target={'_blank'}>Github</a>_
+
+# LlamaIndex agentlens Integration Example
+
+This notebook demonstrates how to use agentlens with LlamaIndex for observability and monitoring of your context-augmented generative AI applications.
+
+## Setup
+
+First, install the required packages:
+
+
+```
+# Install required packages
+!pip install agentlens llama-index-instrumentation-agentlens llama-index-embeddings-huggingface llama-index-llms-huggingface python-dotenv
+```
+
+## Initialize agentlens Handler
+
+Set up the agentlens handler for LlamaIndex instrumentation:
+
+
+```
+import os
+from dotenv import load_dotenv
+from llama_index.core import VectorStoreIndex, Document, Settings
+from llama_index.instrumentation.agentlens import agentlensHandler
+
+# Initialize agentlens handler
+handler = agentlensHandler()
+handler.init()
+
+# Load environment variables
+load_dotenv()
+
+# Set API keys (replace with your actual keys)
+os.environ["AGENTLENS_API_KEY"] = os.getenv("AGENTLENS_API_KEY", "your_agentlens_api_key_here")
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY", "your_openai_api_key_here")
+```
+
+## Configure Local Models (Optional)
+
+For this example, we'll use local HuggingFace models to avoid requiring external API keys:
+
+
+```
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.llms.huggingface import HuggingFaceLLM
+
+# Configure local embeddings and LLM
+Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
+Settings.llm = HuggingFaceLLM(model_name="microsoft/DialoGPT-medium")
+print("Using local HuggingFace embeddings and LLM")
+```
+
+## Create Sample Documents and Index
+
+Create some sample documents and build a vector index:
+
+
+```
+print("🚀 Starting LlamaIndex agentlens Integration Example")
+print("=" * 50)
+
+# Create sample documents
+documents = [
+    Document(text="LlamaIndex is a framework for building context-augmented generative AI applications with LLMs."),
+    Document(text="agentlens provides observability into your AI applications, tracking LLM calls, performance metrics, and more."),
+    Document(text="The integration between LlamaIndex and agentlens allows you to monitor your RAG applications seamlessly."),
+    Document(text="Vector databases are used to store and retrieve embeddings for similarity search in RAG applications."),
+    Document(text="Context-augmented generation combines retrieval and generation to provide more accurate and relevant responses.")
+]
+
+print("📚 Creating vector index from sample documents...")
+index = VectorStoreIndex.from_documents(documents)
+print("✅ Vector index created successfully")
+```
+
+## Perform Queries
+
+Now let's perform some queries to demonstrate the agentlens integration:
+
+
+```
+# Create query engine
+query_engine = index.as_query_engine()
+
+print("🔍 Performing queries...")
+
+# Sample queries
+queries = [
+    "What is LlamaIndex?",
+    "How does agentlens help with AI applications?",
+    "What are the benefits of using vector databases in RAG?"
+]
+
+for i, query in enumerate(queries, 1):
+    print(f"\n📝 Query {i}: {query}")
+    response = query_engine.query(query)
+    print(f"💬 Response: {response}")
+```
+
+## Results
+
+After running this notebook, you should see:
+
+1. **agentlens Session Link**: A URL to view the session in your agentlens dashboard
+2. **Cost Tracking**: Information about the cost of LLM calls (if using paid APIs)
+3. **Operation Tracking**: All LlamaIndex operations are automatically tracked
+
+Check your agentlens dashboard to see detailed information about:
+- LLM calls and responses
+- Performance metrics
+- Cost analysis
+- Session replay
+
+The session link will be printed in the output above by agentlens.
+
+
+```
+print("\n" + "=" * 50)
+print("🎉 Example completed successfully!")
+print("📊 Check your agentlens dashboard to see the recorded session with LLM calls and operations.")
+print("🔗 The session link should be printed above by agentlens.")
+```
+
+
+<script type="module" src="/scripts/github_stars.js"></script>
+<script type="module" src="/scripts/scroll-img-fadein-animation.js"></script>
+<script type="module" src="/scripts/button_heartbeat_animation.js"></script>
+<script type="module" src="/scripts/adjust_api_dynamically.js"></script>

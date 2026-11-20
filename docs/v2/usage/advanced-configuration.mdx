@@ -1,0 +1,33 @@
+---
+title: "Advanced Configuration"
+---
+
+In agentlens fashion, you only need to add one line of "code" to your `.env` file 😊
+
+<CodeGroup>
+  ```python .env
+  AGENTLENS_API_KEY=<YOUR API KEY>
+  ```
+</CodeGroup>
+
+<Tip>
+Find your agentlens API Key in your Settings > [Projects & API Keys](http://localhost:3000/settings/projects) page.
+</Tip>
+
+#### Optional settings:
+
+```python .env
+# The agentlens API endpoint. Defaults to http://localhost:8000
+AGENTLENS_API_ENDPOINT=http://localhost:8000
+# Logging level. <DEBUG, INFO, CRITICAL>. Defaults to INFO
+AGENTLENS_LOG_LEVEL=INFO
+# Write logs to file <TRUE, FALSE>. Defaults to TRUE
+AGENTLENS_LOGGING_TO_FILE=TRUE
+# Whether to opt out of recording environment data. <FALSE, TRUE>. Defaults to FALSE
+AGENTLENS_ENV_DATA_OPT_OUT=FALSE
+```
+
+<script type="module" src="/scripts/github_stars.js"></script>
+<script type="module" src="/scripts/scroll-img-fadein-animation.js"></script>
+<script type="module" src="/scripts/button_heartbeat_animation.js"></script>
+<script type="module" src="/scripts/adjust_api_dynamically.js"></script>
