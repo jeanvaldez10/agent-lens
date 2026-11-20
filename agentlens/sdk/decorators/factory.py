@@ -392,7 +392,9 @@ def create_entity_decorator(entity_kind: str) -> Callable[..., Any]:
                         span.set_attribute(SpanAttributes.LLM_USAGE_TOOL_COST, cost)
                     # Set spec attribute if guardrail
                     if entity_kind == "guardrail" and (spec == "input" or spec == "output"):
-                        span.set_attribute(SpanAttributes.AGENTLENS_DECORATOR_SPEC.format(entity_kind=entity_kind), spec)
+                        span.set_attribute(
+                            SpanAttributes.AGENTLENS_DECORATOR_SPEC.format(entity_kind=entity_kind), spec
+                        )
                 except Exception as e:
                     logger.warning(f"Input recording failed for '{operation_name}': {e}")
                 result = wrapped_func(*args, **kwargs)
@@ -411,7 +413,9 @@ def create_entity_decorator(entity_kind: str) -> Callable[..., Any]:
                         span.set_attribute(SpanAttributes.LLM_USAGE_TOOL_COST, cost)
                     # Set spec attribute if guardrail
                     if entity_kind == "guardrail" and (spec == "input" or spec == "output"):
-                        span.set_attribute(SpanAttributes.AGENTLENS_DECORATOR_SPEC.format(entity_kind=entity_kind), spec)
+                        span.set_attribute(
+                            SpanAttributes.AGENTLENS_DECORATOR_SPEC.format(entity_kind=entity_kind), spec
+                        )
                 except Exception as e:
                     logger.warning(f"Input recording failed for '{operation_name}': {e}")
                 result = wrapped_func(*args, **kwargs)
