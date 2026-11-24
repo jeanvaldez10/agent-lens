@@ -1,0 +1,117 @@
+---
+title: 'agentlens Logger'
+description: 'This document explains the use of the agentlensLogger
+ and agentlensHandler classes, which are used for creating loggers 
+ and handlers configured to work with the agentlens service'
+---
+
+## agentlens logger
+
+The agentlens logger is quick and simple way of integrating your existing 
+agent codebase with agentlens. It allows you to use your current logs as events 
+by extending the built-in Python logging system to emit events to agentlens.
+
+There are main ways of using it: 
+* Initializing a new Logger with agentlens functionality
+* Adding a log handler to your existing Logger
+
+But first, we must import agentlens classes and initilize the agentlens client.
+
+```python python
+from agentlens import Client, agentlensLogger
+
+ao_client = Client(<INSERT YOUR API KEY HERE>)
+```
+
+### Initializing a new Logger
+
+If you don't already have a logger or want to simply initialize your logger
+via agentlens, do the following: 
+
+We can initilize a new logger with the following:
+```python python
+logger = agentlensLogger.get_agentlens_logger(ao_client, "my_logger")
+```
+Now whenever you call get a logger with the same name, any logs written to the 
+logger will be sent to agentlens.
+
+`get_agentlens_logger` also takes the optional parameter of `level` to limit
+the amount of logs that get sent to agentlens.
+
+### Adding a log handler
+
+If you already have complex set ups for your logging and you find it more convinient, 
+you can get a log handler from Agent Ops and attach it to your existing logger
+
+Then we can initilize a new logger with the client
+```python python
+handler = agentlensLogger.get_agentlens_handler(agentlens, "my_logger")
+<YOUR LOGGER>.addHandler(handler)
+```
+
+## Details
+
+The agentlensLogger class is a utility class for creating loggers 
+and handlers configured to work with the agentlens service.
+
+```python python
+@staticmethod
+def get_agentlens_logger(client: Client, name: str, level=logging.DEBUG)
+```
+This static method creates and returns a logger with an agentlensHandler.
+
+Arguments
+
+   * client (Client): The agentlens client to which the logs will be sent.
+   * name (str): The name for the logger and handler.
+   * level (int, optional): The minimum severity level to log. Defaults to logging.DEBUG.
+
+Returns
+* A logger (logging.Logger) configured with an agentlensHandler.
+
+```python python
+@staticmethod
+def get_agentlens_handler(client: agentlens, name: str)
+```
+
+This static method creates and returns an agentlensHandler.
+
+Arguments
+    * client (Client): The agentlens client to which the logs will be sent.
+    * name (str): The name for the handler.
+
+Returns
+* A new agentlensHandler with the given client and name.
+
+The agentlensHandler class is a custom logging handler for sending logs 
+to the agentlens service. This handler extends the built-in logging.Handler
+ class to send log records to agentlens. It also removes ANSI color codes 
+ from log messages before sending them.
+
+This method initializes the handler with a specific agentlens client and name.
+
+Arguments
+    * client (Client): The agentlens client to which the logs will be sent.
+    * name (str): The name for this handler.
+
+```python python
+@staticmethod
+def remove_color_codes(s: str) -> str
+```
+This static method removes ANSI color codes from a string.
+
+Arguments
+    * s (str): The string from which color codes will be removed.
+
+Returns
+*The same string, but without any color codes.
+
+###emit
+
+```python python
+def emit(self, record)
+```
+This method processes a log record and sends it to the agentlens client. It is called whenever a log record needs to be processed.
+
+Arguments
+    * record (logging.LogRecord): The log record to process.

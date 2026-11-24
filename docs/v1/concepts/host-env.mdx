@@ -1,0 +1,35 @@
+---
+title: Host Environment Data
+description: How agentlens collects environment data
+---
+
+## What Data is Collected?
+
+The agentlens SDK uses `psutil` to gather certain information about the machine that it is being run on. This data
+includes information about:
+- CPU
+- Memory
+- Storage
+- Operating System
+
+## How is it used?
+
+This data is used only for determining issues with the host environment and reporting this on your dashboard.
+
+> Example: Your agent performed slower because of a reduction in available memory
+
+This data is used in accordance with our [Privacy Policy](http://localhost:3000/privacy-policy)
+and is never sold or shared.
+
+## Opting-Out
+
+agentlens users can opt out of certain environment data collection by setting the following environment variable.
+
+```
+AGENTLENS_ENV_DATA_OPT_OUT=True
+```
+
+For more questions on privacy and data usage, please [send us an email](mailto:alex@github.com/jeanvaldez10/agent-lens)
+
+<script type="module" src="/scripts/github_stars.js"></script>
+<script type="module" src="/scripts/adjust_api_dynamically.js"></script>

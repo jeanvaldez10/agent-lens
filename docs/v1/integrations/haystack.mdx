@@ -1,0 +1,86 @@
+---
+title: Haystack
+description: "Monitor your Haystack agents with agentlens"
+---
+
+import CodeTooltip from '/snippets/add-code-tooltip.mdx'
+import EnvTooltip from '/snippets/add-env-tooltip.mdx'
+
+agentlens makes monitoring your Haystack agents seamless. Haystack, much like AutoGen, is a flexible framework that supports multiple models. For detailed installation instructions and feature overviews, refer to the [Haystack documentation](https://docs.haystack.deepset.ai/docs/installation).
+
+## Integrating agentlens with Haystack
+
+<Steps>
+  <Step title="Install the agentlens SDK">
+    <CodeGroup>
+      ```bash pip
+      pip install agentlens
+      ```
+      ```bash poetry
+      poetry add agentlens
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Install Haystack">
+    <Warning>
+      We currently only support Haystack 2.x.
+    </Warning>
+    <CodeGroup>
+      ```bash pip
+      pip install haystack-ai
+      ```
+      ```bash poetry
+      poetry add haystack-ai
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Configure your environment">
+    <EnvTooltip />
+    <CodeGroup>
+      ```python .env
+      AGENTLENS_API_KEY=<YOUR API KEY>
+      ```
+    </CodeGroup>
+    Read more about environment variables in [Advanced Configuration](/v1/usage/advanced-configuration)
+  </Step>
+  <Step title="Add 3 lines of code">
+    <CodeTooltip/>
+    <CodeGroup>
+      ```python python
+      import agentlens
+      agentlens.init(<INSERT YOUR API KEY HERE>)
+      ...
+      # End of program (e.g. main.py)
+      agentlens.end_session("Success") # Success|Fail|Indeterminate
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Run your agent">
+    Execute your script and then visit [app.github.com/jeansvaldez/agentlens/drilldown](http://localhost:3000/drilldown) to monitor your Haystack agent in action. 🕵️
+    <Tip>
+      After execution, agentlens outputs a clickable URL in the console that links directly to your session in the Dashboard.
+    </Tip>
+    <div/>{/* Intentionally blank div for newline */}
+    <Frame type="glass" caption="Clickable link to session">
+      <img height="200" src="https://github.com/jeanvaldez10/agent-lens/blob/main/docs/images/link-to-session.gif?raw=true" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Supported generators
+
+- OpenAI: `haystack.components.generators.openai.OpenAIGenerator`
+- Azure OpenAI Chat: `haystack.components.generators.chat.AzureOpenAIChatGenerator`
+
+## Full Examples
+
+You can refer to the following examples -
+
+- [Simple Haystack example (OpenAI)](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/haystack/haystack_example.py)
+- [Haystack Azure OpenAI Chat example](https://github.com/jeanvaldez10/agent-lens/blob/main/examples/haystack/azure_haystack_example.py)
+
+<script type="module" src="/scripts/github_stars.js"></script>
+<script type="module" src="/scripts/scroll-img-fadein-animation.js"></script>
+<script type="module" src="/scripts/button_heartbeat_animation.js"></script>
+<script type="css" src="/styles/styles.css"></script>
+<script type="module" src="/scripts/adjust_api_dynamically.js"></script>

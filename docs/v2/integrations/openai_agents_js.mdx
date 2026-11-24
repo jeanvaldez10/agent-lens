@@ -1,0 +1,38 @@
+---
+title: OpenAI Agents JS
+description: 'agentlens integration with the OpenAI Agents SDK for TypeScript/JavaScript.'
+---
+
+[OpenAI Agents JS](https://github.com/openai/openai-agents-js) is a lightweight yet powerful SDK for building multi-agent workflows in TypeScript. agentlens seamlessly integrates to provide observability into these workflows.
+
+- [OpenAI Agents JS documentation](https://openai.github.io/openai-agents-js)
+- [Python guide](/v2/integrations/openai_agents_python)
+
+## Installation
+
+```bash
+npm install agentlens @openai/agents
+```
+
+## Usage
+
+```typescript
+import { agentlens } from 'agentlens';
+import { Agent, run } from '@openai/agents';
+
+await agentlens.init();
+
+const agent = new Agent({
+  name: 'Assistant',
+  instructions: 'You are a helpful assistant.'
+});
+
+const result = await run(agent, 'Hello, world!');
+console.log(result.finalOutput);
+```
+
+<script type="module" src="/scripts/github_stars.js"></script>
+<script type="module" src="/scripts/scroll-img-fadein-animation.js"></script>
+<script type="module" src="/scripts/button_heartbeat_animation.js"></script>
+<script type="css" src="/styles/styles.css"></script>
+<script type="module" src="/scripts/adjust_api_dynamically.js"></script>
