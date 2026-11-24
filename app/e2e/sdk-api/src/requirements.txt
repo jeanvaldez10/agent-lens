@@ -1,0 +1,2 @@
+agentlens @ https://github.com/jeanvaldez10/agent-lens/archive/main.tar.gz
+openai==1.12.0

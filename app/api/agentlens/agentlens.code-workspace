@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "../../../agentlens"
+    },
+    {
+      "path": "../.."
+    },
+    {
+      "path": "../../../agentlens-ts"
+    }
+  ],
+  "settings": {},
+}
